@@ -1,0 +1,55 @@
+/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use thePyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 29821
+  Num Epochs = 3
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 8
+  Total optimization steps = 2796
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+
+
+
+
+
+
+
+  0%|▏                                                                     | 9/2796 [00:16<1:23:43,  1.80s/it]
+  0%|▏                                                                    | 10/2796 [00:18<1:24:13,  1.81s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████▋   | 404/424 [00:30<00:01, 12.72it/s]
+  File "/home/gokul.kumar/Desktop/multilingual-qa/main.py", line 157, in <module>/424 [00:32<00:00, 13.73it/s]
+    main(args)
+  File "/home/gokul.kumar/Desktop/multilingual-qa/main.py", line 104, in main
+    trainer.train()
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer.py", line 1440, in train
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer.py", line 1565, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer.py", line 2234, in evaluate
+    self.control = self.callback_handler.on_evaluate(self.args, self.state, self.control, output.metrics)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer_callback.py", line 374, in on_evaluate
+    return self.call_event("on_evaluate", args, state, control, metrics=metrics)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer_callback.py", line 389, in call_event
+    result = getattr(callback, event)(
+  File "/home/gokul.kumar/Desktop/multilingual-qa/engine.py", line 51, in on_evaluate
+    predictions_raw = model.forward(**self.dataset_tokenized)
+TypeError: transformers.models.bert.modeling_bert.BertForQuestionAnswering.forward() argument after ** must be a mapping, not Dataset

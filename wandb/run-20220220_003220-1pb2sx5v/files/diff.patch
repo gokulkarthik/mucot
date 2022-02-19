@@ -1,0 +1,47 @@
+diff --git a/.gitignore b/.gitignore
+index 07f43b8..530e159 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,5 @@
+-data/*
+\ No newline at end of file
++__pycache__
++ckpts/*
++data/*
++temp/*
++tmp_trainer/*
+\ No newline at end of file
+diff --git a/README.md b/README.md
+index bb84b17..e8de6a7 100644
+--- a/README.md
++++ b/README.md
+@@ -1,10 +1,11 @@
+ # multilingual-qa
+ 
+ ## Datasets
+-### Chaii 
++
++### Chaii
++
+ * Chaii Original - [Kaggle Link](https://www.kaggle.com/c/chaii-hindi-and-tamil-question-answering/data)
+ * Chaii Translated & Transliterated - [Kaggle Link](https://www.kaggle.com/gokulkarthik/chaiitrans)
+ 
+ > Run [utils/split_chaii_dataset.py](./utils/split_chaii_dataset.py) to make the train-test split.
+-
+----
++<img src='images/chaii_dataset_info.png' width=512>
+\ No newline at end of file
+diff --git a/requirements.txt b/requirements.txt
+index 0d6430c..be38ef5 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,5 +1,8 @@
++datasets
+ numpy
+ pandas
+ scikit-learn
+ torch
+ transformers
++tqdm
++wandb
+\ No newline at end of file

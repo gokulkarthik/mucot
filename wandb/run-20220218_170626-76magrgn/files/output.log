@@ -1,0 +1,25 @@
+  0%|                                                                                                          | 0/1 [00:00<?, ?ba/s]
+Traceback (most recent call last):
+  File "/home/gokul.kumar/Desktop/multilingual-qa/main.py", line 150, in <module>
+    main(args)
+  File "/home/gokul.kumar/Desktop/multilingual-qa/main.py", line 123, in main
+    dataset_test, dataset_test_tokenized = load_dataset(args=args, split='test', mode='test', tokenizer=tokenizer)
+  File "/home/gokul.kumar/Desktop/multilingual-qa/datasets_local.py", line 255, in load_dataset
+    hf_dataset_tokenized = hf_dataset.map(map_fn, fn_kwargs={'args':args, 'tokenizer': tokenizer},
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2102, in map
+    return self._map_single(
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 518, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 485, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/datasets/fingerprint.py", line 413, in wrapper
+    out = func(self, *args, **kwargs)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2481, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2367, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/datasets/arrow_dataset.py", line 2062, in decorated
+    result = f(decorated_item, *args, **kwargs)
+  File "/home/gokul.kumar/Desktop/multilingual-qa/datasets_local.py", line 126, in prepare_test_features
+    examples["question" if args.pad_on_right else "context"],
+AttributeError: 'Namespace' object has no attribute 'pad_on_right'

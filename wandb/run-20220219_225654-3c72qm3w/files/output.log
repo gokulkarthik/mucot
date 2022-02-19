@@ -1,0 +1,87 @@
+You are adding a <class 'engine.EvaluationCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+WandbCallback
+EarlyStoppingCallback
+EvaluationCallback
+/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use thePyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 2016
+  Num Epochs = 3
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 8
+  Total optimization steps = 189
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+
+
+
+
+
+
+
+  5%|████████████▏                                                                                                                                                                                                                                                   | 9/189 [00:16<05:25,  1.81s/it]
+  5%|█████████████▍                                                                                                                                                                                                                                                 | 10/189 [00:18<05:23,  1.81s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏       | 411/424 [00:30<00:01, 12.46it/s]
+PyTorch: setting up devices████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:31<00:00, 12.46it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 2016
+  Batch size = 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 252/252 [00:35<00:00,  6.60it/s]
+Post-processing 100 example predictions split into 2016 features.
+
+
+    main(args)████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉     | 98/100 [00:05<00:00, 14.41it/s]
+  File "/home/gokul.kumar/Desktop/multilingual-qa/main.py", line 111, in main
+    trainer.train()
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer.py", line 1440, in train
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer.py", line 1565, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer.py", line 2234, in evaluate
+    self.control = self.callback_handler.on_evaluate(self.args, self.state, self.control, output.metrics)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer_callback.py", line 374, in on_evaluate
+    return self.call_event("on_evaluate", args, state, control, metrics=metrics)
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/trainer_callback.py", line 389, in call_event
+    result = getattr(callback, event)(
+  File "/home/gokul.kumar/Desktop/multilingual-qa/engine.py", line 42, in on_evaluate
+    f'{self.prefix}_jaccard_score_{language}': metrics.jaccard_score,
+AttributeError: 'dict' object has no attribute 'jaccard_score'

@@ -1,0 +1,178 @@
+You are adding a <class 'engine.EvaluationCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+WandbCallback
+EarlyStoppingCallback
+EvaluationCallback
+/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use thePyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 324
+  Num Epochs = 3
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 8
+  Total optimization steps = 30
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+
+
+
+
+
+
+
+ 27%|████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                            | 8/30 [00:14<00:39,  1.80s/it]
+ 33%|█████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                                          | 10/30 [00:17<00:35,  1.80s/it]***** Running Evaluation *****
+  Num examples = 445
+  Batch size = 4
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉         | 108/112 [00:08<00:00, 13.91it/s]
+PyTorch: setting up devices████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 112/112 [00:08<00:00, 13.11it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 392
+  Batch size = 8
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:07<00:00,  6.58it/s]
+Post-processing 20 example predictions split into 392 features.
+{'jaccard_score': 0.0, 'f1_score': 0.0}
+No `TrainingArguments` passed, using `output_dir=tmp_trainer`.███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:07<00:00,  6.58it/s]
+PyTorch: setting up devices██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:00<00:00, 23.46it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 302
+  Batch size = 8
+
+
+ 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                 | 33/38 [00:04<00:00,  6.51it/s]
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:05<00:00,  6.93it/s]
+{'jaccard_score': 0.00591715976331361, 'f1_score': 0.009049773755656108}
+
+
+
+
+
+
+
+
+ 63%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                             | 19/30 [00:58<00:23,  2.10s/it]
+ 67%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                     | 20/30 [00:59<00:19,  1.99s/it]***** Running Evaluation *****
+  Num examples = 445
+  Batch size = 4
+
+
+
+ 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                  | 90/112 [00:06<00:01, 13.55it/s]
+PyTorch: setting up devices████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 112/112 [00:07<00:00, 25.49it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 392
+  Batch size = 8
+
+
+
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎               | 46/49 [00:06<00:00,  6.63it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:07<00:00,  6.62it/s]
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                         | 18/20 [00:01<00:00, 20.43it/s]
+{'jaccard_score': 0.0, 'f1_score': 0.0}
+PyTorch: setting up devices████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                         | 18/20 [00:01<00:00, 20.43it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 302
+  Batch size = 8
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:05<00:00,  6.86it/s]
+Post-processing 20 example predictions split into 302 features.
+{'jaccard_score': 0.0038461538461538464, 'f1_score': 0.007692307692307693}
+
+
+
+
+
+
+
+
+
+ 97%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍        | 29/30 [01:41<00:02,  2.34s/it]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [01:43<00:00,  2.19s/it]***** Running Evaluation *****
+  Num examples = 445
+  Batch size = 4
+
+
+
+ 86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                    | 96/112 [00:07<00:01, 13.35it/s]
+PyTorch: setting up devices████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 112/112 [00:08<00:00, 13.12it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 392
+  Batch size = 8
+
+
+
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎               | 46/49 [00:06<00:00,  6.59it/s]
+No `TrainingArguments` passed, using `output_dir=tmp_trainer`.███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:07<00:00,  6.54it/s]
+PyTorch: setting up devices██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:00<00:00, 22.86it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 302
+  Batch size = 8
+  0%|                                                                                                                                                                                                                                                                         | 0/38 [00:00<?, ?it/s]
+{'jaccard_score': 0.0, 'f1_score': 0.0}
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:05<00:00, 11.04it/s]
+  0%|                                                                                                                                                                                                                                                                         | 0/20 [00:00<?, ?it/s]
+Post-processing 20 example predictions split into 302 features.
+{'jaccard_score': 0.0038461538461538464, 'f1_score': 0.007692307692307693}
+{'jaccard_score': 0.0, 'f1_score': 0.0}
+{'train_runtime': 127.4798, 'train_samples_per_second': 7.625, 'train_steps_per_second': 0.235, 'train_loss': 5.47565549214681, 'epoch': 2.99}
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [02:07<00:00,  4.25s/it]
+No `TrainingArguments` passed, using `output_dir=tmp_trainer`.
+PyTorch: setting up devices
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 392
+  Batch size = 8
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:06<00:00,  6.89it/s]
+  5%|████████████▊                                                                                                                                                                                                                                                    | 1/20 [00:00<00:03,  6.04it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:09<00:00,  5.31it/s]
+No `TrainingArguments` passed, using `output_dir=tmp_trainer`.
+PyTorch: setting up devices
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 302
+  Batch size = 8
+train: Jaccard:0.0    F1:0.0
+          jaccard_score  f1_score language
+language
+hi                  0.0       0.0       hi
+ta                  0.0       0.0       ta
+ 74%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                   | 28/38 [00:03<00:01,  6.90it/s]
+ 55%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                   | 11/20 [00:00<00:00, 23.25it/s]
+ 55%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                   | 11/20 [00:00<00:00, 23.25it/s]
+Post-processing 20 example predictions split into 302 features.
+test: Jaccard:0.0025    F1:0.005
+          jaccard_score  f1_score language
+language
+hi             0.003846  0.007692       hi
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:07<00:00,  5.24it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:07<00:00,  5.24it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:07<00:00,  5.24it/s]

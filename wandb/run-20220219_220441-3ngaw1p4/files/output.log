@@ -1,0 +1,455 @@
+/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use thePyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 2016
+  Num Epochs = 3
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 8
+  Total optimization steps = 189
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+
+
+
+
+
+
+  5%|███▊                                                                    | 10/189 [00:16<05:19,  1.79s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+{'loss': 5.9576, 'learning_rate': 1.5789473684210526e-06, 'epoch': 0.16}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|█████████████████████████████████████████████████████████████████████▉ | 418/424 [00:31<00:00, 12.67it/s]
+PyTorch: setting up devices█████████████████████████████████████████████████| 424/424 [00:32<00:00, 13.28it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████▋| 211/212 [00:30<00:00,  6.78it/s]
+Post-processing 100 example predictions split into 1693 features.
+
+ 72%|███████████████████████████████████████████████████▊                    | 72/100 [00:03<00:01, 24.74it/s]
+Test: Jaccard:0.004248376623376623    F1:0.009093137254901962
+          jaccard_score  f1_score
+language
+hi             0.006341  0.013572
+
+
+
+
+
+
+
+
+
+
+
+ 10%|███████▏                                                                | 19/189 [01:45<08:44,  3.09s/it]
+ 11%|███████▌                                                                | 20/189 [01:47<07:38,  2.71s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|██████████████████████████████████████████████████████████████████████▎| 420/424 [00:31<00:00, 12.92it/s]
+PyTorch: setting up devices█████████████████████████████████████████████████| 424/424 [00:32<00:00, 13.87it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████| 212/212 [00:29<00:00,  7.27it/s]
+  3%|██▏                                                                      | 3/100 [00:00<00:07, 13.31it/s]
+
+
+ 96%|█████████████████████████████████████████████████████████████████████   | 96/100 [00:04<00:00, 27.60it/s]
+Test: Jaccard:0.0027142857142857147    F1:0.00625
+          jaccard_score  f1_score
+language
+hi             0.004051  0.009328
+
+
+
+
+
+
+
+
+
+
+ 15%|███████████                                                             | 29/189 [03:14<08:24,  3.16s/it]
+ 16%|███████████▍                                                            | 30/189 [03:16<07:17,  2.75s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 97%|████████████████████████████████████████████████████████████████████▊  | 411/424 [00:29<00:00, 13.28it/s]
+PyTorch: setting up devices█████████████████████████████████████████████████| 424/424 [00:30<00:00, 13.79it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████| 212/212 [00:30<00:00,  7.35it/s]
+  8%|█████▊                                                                   | 8/100 [00:00<00:03, 24.43it/s]
+
+
+ 97%|█████████████████████████████████████████████████████████████████████▊  | 97/100 [00:04<00:00, 28.01it/s]
+Test: Jaccard:0.0072976190476190484    F1:0.010938888888888889
+          jaccard_score  f1_score
+language
+hi             0.010892  0.016327
+
+
+
+
+
+
+
+
+
+ 21%|██████████████▊                                                         | 39/189 [04:43<08:29,  3.40s/it]
+ 21%|███████████████▏                                                        | 40/189 [04:44<07:15,  2.92s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+PyTorch: setting up devices█████████████████████████████████████████████████| 424/424 [00:29<00:00, 13.17it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+  0%|                                                                                 | 0/212 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████▋| 211/212 [00:31<00:00,  6.68it/s]
+  0%|                                                                                 | 0/100 [00:00<?, ?it/s]
+
+
+ 97%|█████████████████████████████████████████████████████████████████████▊  | 97/100 [00:04<00:00, 28.53it/s]
+Test: Jaccard:0.00041666666666666664    F1:0.0008
+          jaccard_score  f1_score
+language
+hi             0.000622  0.001194
+
+
+
+
+
+
+
+
+ 26%|██████████████████▋                                                     | 49/189 [06:08<06:30,  2.79s/it]
+ 26%|███████████████████                                                     | 50/189 [06:10<06:19,  2.73s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PyTorch: setting up devices█████████████████████████████████████████████████| 424/424 [00:30<00:00, 12.96it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+  2%|█▋                                                                       | 5/212 [00:00<00:26,  7.86it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████| 212/212 [00:31<00:00,  7.38it/s]
+ 14%|██████████                                                              | 14/100 [00:00<00:04, 20.18it/s]
+
+
+ 98%|██████████████████████████████████████████████████████████████████████▌ | 98/100 [00:04<00:00, 22.26it/s]
+Test: Jaccard:0.0009523809523809524    F1:0.0016
+          jaccard_score  f1_score
+language
+hi             0.001421  0.002388
+
+
+
+
+
+
+
+
+ 31%|██████████████████████▍                                                 | 59/189 [07:35<06:07,  2.82s/it]
+ 32%|██████████████████████▊                                                 | 60/189 [07:37<05:23,  2.51s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████▍  | 409/424 [00:31<00:01, 12.79it/s]
+PyTorch: setting up devices█████████████████████████████████████████████████| 424/424 [00:32<00:00, 12.98it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████| 212/212 [00:31<00:00,  7.07it/s]
+  2%|█▍                                                                       | 2/100 [00:00<00:05, 19.06it/s]
+
+
+ 94%|███████████████████████████████████████████████████████████████████▋    | 94/100 [00:04<00:00, 27.35it/s]
+Test: Jaccard:0.0    F1:0.0
+          jaccard_score  f1_score
+language
+hi                  0.0       0.0
+
+
+
+
+
+
+
+
+ 37%|██████████████████████████▋                                             | 70/189 [09:07<05:23,  2.72s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+  1%|▌                                                                        | 3/424 [00:00<00:20, 20.45it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|██████████████████████████████████████████████████████████████████████▎| 420/424 [00:31<00:00, 12.96it/s]
+PyTorch: setting up devices█████████████████████████████████████████████████| 424/424 [00:32<00:00, 13.88it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████▋| 211/212 [00:29<00:00,  9.29it/s]
+  0%|                                                                                 | 0/100 [00:00<?, ?it/s]
+
+
+ 93%|██████████████████████████████████████████████████████████████████▉     | 93/100 [00:04<00:00, 25.18it/s]
+Test: Jaccard:0.0    F1:0.0
+          jaccard_score  f1_score
+language
+hi                  0.0       0.0
+
+
+
+
+
+
+
+
+
+
+ 42%|██████████████████████████████▍                                         | 80/189 [10:36<05:00,  2.75s/it]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+  4%|██▌                                                                     | 15/424 [00:01<00:30, 13.33it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PyTorch: setting up devices█████████████████████████████████████████████████| 424/424 [00:31<00:00, 12.50it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+{'eval_loss': 1.3933401107788086, 'eval_runtime': 31.3822, 'eval_samples_per_second': 53.948, 'eval_steps_per_second': 13.511, 'epoch': 1.27}
+
+
+

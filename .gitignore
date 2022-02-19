@@ -1,1 +1,6 @@
+__pycache__
+ckpts/*
 data/*
+temp/*
+tmp_trainer/*
+wandb/*

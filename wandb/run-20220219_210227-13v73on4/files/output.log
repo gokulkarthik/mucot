@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/gokul.kumar/Desktop/multilingual-qa/main.py", line 157, in <module>
+    main(args)
+  File "/home/gokul.kumar/Desktop/multilingual-qa/main.py", line 100, in main
+    callbacks = [EarlyStoppingCallback(early_stopping_patience = 2), CustomCallback(dataset=dataset_test, dataset_tokenized=dataset_test_tokenized)]
+TypeError: CustomCallback() takes no arguments

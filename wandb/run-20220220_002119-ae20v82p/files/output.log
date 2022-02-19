@@ -1,0 +1,1473 @@
+/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use thePyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 29821
+  Num Epochs = 4
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 8
+  Total optimization steps = 3728
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  3%|██▏                                                                                 | 99/3728 [01:24<51:39,  1.17it/s]
+  3%|██▏                                                                                | 100/3728 [01:25<53:48,  1.12it/s]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████▌  | 412/424 [00:13<00:00, 29.32it/s]
+PyTorch: setting up devices██████████████████████████████████████████████████████████████| 424/424 [00:14<00:00, 29.39it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.63it/s]
+Post-processing 100 example predictions split into 1693 features.
+
+ 66%|████████████████████████████████████████████████████████                             | 66/100 [00:02<00:01, 26.59it/s]
+{'jaccard_score': 0.0024875621890547268, 'f1_score': 0.006233538191395961}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  5%|████▍                                                                              | 199/3728 [03:27<51:04,  1.15it/s]
+  5%|████▍                                                                              | 200/3728 [03:28<53:09,  1.11it/s]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████▋    | 402/424 [00:13<00:00, 29.01it/s]
+PyTorch: setting up devices██████████████████████████████████████████████████████████████| 424/424 [00:14<00:00, 29.01it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.53it/s]
+ 20%|█████████████████                                                                    | 20/100 [00:00<00:02, 30.19it/s]
+
+
+ 71%|████████████████████████████████████████████████████████████▎                        | 71/100 [00:02<00:01, 27.68it/s]
+{'jaccard_score': 0.009701492537313432, 'f1_score': 0.014214641080312722}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  8%|██████▋                                                                            | 300/3728 [05:31<51:36,  1.11it/s]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+ 11%|█████████                                                                            | 45/424 [00:01<00:13, 29.03it/s]
+
+
+
+
+
+
+PyTorch: setting up devices██████████████████████████████████████████████████████████████| 424/424 [00:14<00:00, 28.94it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+  8%|██████▍                                                                              | 16/212 [00:01<00:13, 14.02it/s]
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.53it/s]
+  2%|█▋                                                                                    | 2/100 [00:00<00:05, 19.44it/s]
+
+
+
+ 98%|███████████████████████████████████████████████████████████████████████████████████▎ | 98/100 [00:04<00:00, 23.39it/s]
+{'jaccard_score': 0.014925373134328358, 'f1_score': 0.014925373134328358}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 11%|████████▊                                                                          | 398/3728 [07:33<48:07,  1.15it/s]
+ 11%|████████▉                                                                          | 400/3728 [07:35<50:06,  1.11it/s]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+PyTorch: setting up devices██████████████████████████████████████████████████████████████| 424/424 [00:14<00:00, 28.88it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+  1%|█▏                                                                                    | 3/212 [00:00<00:10, 20.54it/s]
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.52it/s]
+Post-processing 100 example predictions split into 1693 features.
+
+ 71%|████████████████████████████████████████████████████████████▎                        | 71/100 [00:02<00:01, 27.19it/s]
+{'jaccard_score': 0.051812366737739875, 'f1_score': 0.061954931226221824}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 13%|███████████                                                                        | 499/3728 [09:37<46:38,  1.15it/s]
+ 13%|███████████▏                                                                       | 500/3728 [09:38<48:38,  1.11it/s]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+ 90%|███████████████████████████████████████████████████████████████████████████▎        | 380/424 [00:13<00:01, 28.93it/s]
+PyTorch: setting up devices██████████████████████████████████████████████████████████████| 424/424 [00:14<00:00, 29.03it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.53it/s]
+ 31%|██████████████████████████▎                                                          | 31/100 [00:01<00:02, 23.65it/s]
+
+ 79%|███████████████████████████████████████████████████████████████████▏                 | 79/100 [00:03<00:00, 25.27it/s]
+{'jaccard_score': 0.08136836824281952, 'f1_score': 0.09112333071484681}
+
+Configuration saved in ckpts/devout-fire-36/checkpoint-500/config.json
+Model weights saved in ckpts/devout-fire-36/checkpoint-500/pytorch_model.bin
+tokenizer config file saved in ckpts/devout-fire-36/checkpoint-500/tokenizer_config.json
+Special tokens file saved in ckpts/devout-fire-36/checkpoint-500/special_tokens_map.json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 16%|█████████████▎                                                                     | 598/3728 [11:46<45:16,  1.15it/s]
+ 16%|█████████████▎                                                                     | 600/3728 [11:48<47:05,  1.11it/s]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+
+ 98%|██████████████████████████████████████████████████████████████████████████████████  | 414/424 [00:14<00:00, 29.00it/s]
+PyTorch: setting up devices██████████████████████████████████████████████████████████████| 424/424 [00:14<00:00, 29.01it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.50it/s]
+Post-processing 100 example predictions split into 1693 features.
+
+
+ 70%|███████████████████████████████████████████████████████████▍                         | 70/100 [00:02<00:01, 29.42it/s]
+{'jaccard_score': 0.11217720919213456, 'f1_score': 0.1336197798884366}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 19%|███████████████▌                                                                   | 699/3728 [13:51<43:50,  1.15it/s]
+ 19%|███████████████▌                                                                   | 700/3728 [13:52<45:39,  1.11it/s]***** Running Evaluation *****
+  Num examples = 1693
+  Batch size = 4
+
+
+
+
+
+
+PyTorch: setting up devices██████████████████████████████████████████████████████████████| 424/424 [00:14<00:00, 28.97it/s]
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+The following columns in the test set  don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping.
+***** Running Prediction *****
+  Num examples = 1693
+  Batch size = 8
+  1%|█▏                                                                                    | 3/212 [00:00<00:10, 20.50it/s]
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.45it/s]
+Post-processing 100 example predictions split into 1693 features.
+ 78%|██████████████████████████████████████████████████████████████████▎                  | 78/100 [00:03<00:00, 26.75it/s]
+ 78%|██████████████████████████████████████████████████████████████████▎                  | 78/100 [00:03<00:00, 26.75it/s]
+{'jaccard_score': 0.1369047619047619, 'f1_score': 0.15599314352606714}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 21%|█████████████████▊                                                                 | 799/3728 [15:54<42:20,  1.15it/s]
+ 21%|█████████████████▊                                                                 | 800/3728 [15:55<44:03,  1.11it/s]***** Running Evaluation *****
+  Batch size = 4 1693
+  Batch size = 4 1693
+  Batch size = 4 1693
+ 26%|██████████████████████▏                                                             | 112/424 [00:03<00:10, 29.05it/s]
+ 41%|██████████████████████████████████                                                  | 172/424 [00:05<00:08, 28.93it/s]
+ 54%|█████████████████████████████████████████████▌                                      | 230/424 [00:07<00:06, 28.92it/s]
+ 68%|█████████████████████████████████████████████████████████                           | 288/424 [00:09<00:04, 28.99it/s]
+ 82%|████████████████████████████████████████████████████████████████████▉               | 348/424 [00:11<00:02, 28.93it/s]
+ 96%|████████████████████████████████████████████████████████████████████████████████▏   | 405/424 [00:13<00:00, 28.91it/s]
+ 96%|████████████████████████████████████████████████████████████████████████████████▏   | 405/424 [00:13<00:00, 28.91it/s]
+  8%|███████▏                                                                             | 18/212 [00:01<00:13, 13.91it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▍                                                                  | 46/212 [00:03<00:12, 13.71it/s]een ignored: example_id, offset_mapping.
+ 32%|███████████████████████████▎                                                         | 68/212 [00:04<00:10, 13.75it/s]een ignored: example_id, offset_mapping.
+ 44%|█████████████████████████████████████▋                                               | 94/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 58%|████████████████████████████████████████████████▎                                   | 122/212 [00:08<00:06, 13.76it/s]een ignored: example_id, offset_mapping.
+ 71%|███████████████████████████████████████████████████████████▍                        | 150/212 [00:10<00:04, 13.74it/s]een ignored: example_id, offset_mapping.
+ 84%|██████████████████████████████████████████████████████████████████████▌             | 178/212 [00:12<00:02, 13.76it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.48it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.48it/s]een ignored: example_id, offset_mapping.
+Post-processing 100 example predictions split into 1693 features.
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.48it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 212/212 [00:15<00:00, 14.48it/s]een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.1489872068230277, 'f1_score': 0.17314183231654698}
+ 21%|█████████████████▍                                                               | 801/3728 [16:33<9:35:39, 11.80s/it]een ignored: example_id, offset_mapping.
+ 22%|█████████████████▍                                                               | 804/3728 [16:35<3:44:48,  4.61s/it]een ignored: example_id, offset_mapping.
+ 22%|█████████████████▌                                                               | 806/3728 [16:37<2:11:28,  2.70s/it]een ignored: example_id, offset_mapping.
+ 22%|█████████████████▌                                                               | 808/3728 [16:39<1:25:44,  1.76s/it]een ignored: example_id, offset_mapping.
+ 22%|██████████████████                                                                 | 811/3728 [16:41<56:53,  1.17s/it]een ignored: example_id, offset_mapping.
+ 22%|██████████████████                                                                 | 813/3728 [16:43<50:56,  1.05s/it]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▏                                                                | 815/3728 [16:45<46:19,  1.05it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▏                                                                | 818/3728 [16:47<43:21,  1.12it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▎                                                                | 820/3728 [16:49<42:33,  1.14it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▎                                                                | 822/3728 [16:51<42:09,  1.15it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▎                                                                | 824/3728 [16:53<41:59,  1.15it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▍                                                                | 827/3728 [16:55<42:42,  1.13it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▍                                                                | 829/3728 [16:57<42:12,  1.14it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▌                                                                | 831/3728 [16:59<41:57,  1.15it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▌                                                                | 834/3728 [17:01<41:48,  1.15it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▌                                                                | 836/3728 [17:03<41:42,  1.16it/s]een ignored: example_id, offset_mapping.
+ 22%|██████████████████▋                                                                | 838/3728 [17:05<43:22,  1.11it/s]een ignored: example_id, offset_mapping.
+ 23%|██████████████████▋                                                                | 840/3728 [17:07<42:26,  1.13it/s]een ignored: example_id, offset_mapping.
+ 23%|██████████████████▊                                                                | 843/3728 [17:09<41:53,  1.15it/s]een ignored: example_id, offset_mapping.
+ 23%|██████████████████▊                                                                | 845/3728 [17:11<41:42,  1.15it/s]een ignored: example_id, offset_mapping.
+ 23%|██████████████████▊                                                                | 847/3728 [17:13<41:40,  1.15it/s]een ignored: example_id, offset_mapping.
+ 23%|██████████████████▉                                                                | 850/3728 [17:16<43:17,  1.11it/s]een ignored: example_id, offset_mapping.
+ 23%|██████████████████▉                                                                | 852/3728 [17:17<42:21,  1.13it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████                                                                | 854/3728 [17:19<41:53,  1.14it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████                                                                | 857/3728 [17:22<41:35,  1.15it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████                                                                | 859/3728 [17:23<41:28,  1.15it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▏                                                               | 861/3728 [17:25<41:24,  1.15it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▏                                                               | 863/3728 [17:27<43:03,  1.11it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▎                                                               | 866/3728 [17:30<42:07,  1.13it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▎                                                               | 868/3728 [17:31<41:40,  1.14it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▎                                                               | 870/3728 [17:33<41:26,  1.15it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▍                                                               | 873/3728 [17:36<41:18,  1.15it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▍                                                               | 875/3728 [17:37<43:00,  1.11it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▌                                                               | 877/3728 [17:39<42:06,  1.13it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▌                                                               | 879/3728 [17:41<41:35,  1.14it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▋                                                               | 882/3728 [17:43<41:14,  1.15it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▋                                                               | 884/3728 [17:45<41:08,  1.15it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▋                                                               | 886/3728 [17:47<41:03,  1.15it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▋                                                               | 886/3728 [17:47<41:03,  1.15it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▋                                                               | 886/3728 [17:47<41:03,  1.15it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▋                                                               | 886/3728 [17:47<41:03,  1.15it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▋                                                               | 886/3728 [17:47<41:03,  1.15it/s]een ignored: example_id, offset_mapping.
+ 24%|███████████████████▋                                                               | 886/3728 [17:47<41:03,  1.15it/s]een ignored: example_id, offset_mapping.
+  Num examples = 1693███▋                                                               | 886/3728 [17:47<41:03,  1.15it/s]een ignored: example_id, offset_mapping.
+  Num examples = 1693███▋                                                               | 886/3728 [17:47<41:03,  1.15it/s]een ignored: example_id, offset_mapping.
+{'loss': 0.3455, 'learning_rate': 2.52876304023845e-06, 'epoch': 0.97}
+ 30%|████████████████████████▉                                                           | 126/424 [00:04<00:10, 28.93it/s]een ignored: example_id, offset_mapping.
+ 43%|████████████████████████████████████▎                                               | 183/424 [00:06<00:08, 28.94it/s]een ignored: example_id, offset_mapping.
+ 57%|████████████████████████████████████████████████▏                                   | 243/424 [00:08<00:06, 29.01it/s]een ignored: example_id, offset_mapping.
+ 71%|███████████████████████████████████████████████████████████▋                        | 301/424 [00:10<00:04, 28.99it/s]een ignored: example_id, offset_mapping.
+ 84%|██████████████████████████████████████████████████████████████████████▉             | 358/424 [00:12<00:02, 28.92it/s]een ignored: example_id, offset_mapping.
+ 99%|███████████████████████████████████████████████████████████████████████████████████ | 419/424 [00:14<00:00, 28.96it/s]een ignored: example_id, offset_mapping.
+ 99%|███████████████████████████████████████████████████████████████████████████████████ | 419/424 [00:14<00:00, 28.96it/s]een ignored: example_id, offset_mapping.
+ 11%|█████████▌                                                                           | 24/212 [00:01<00:13, 13.83it/s]een ignored: example_id, offset_mapping.
+ 25%|████████████████████▊                                                                | 52/212 [00:03<00:11, 13.77it/s]een ignored: example_id, offset_mapping.
+ 38%|████████████████████████████████                                                     | 80/212 [00:05<00:09, 13.76it/s]een ignored: example_id, offset_mapping.
+ 51%|██████████████████████████████████████████▊                                         | 108/212 [00:07<00:07, 13.70it/s]een ignored: example_id, offset_mapping.
+ 51%|██████████████████████████████████████████▊                                         | 108/212 [00:07<00:07, 13.70it/s]een ignored: example_id, offset_mapping.
+ 51%|██████████████████████████████████████████▊                                         | 108/212 [00:07<00:07, 13.70it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:27<00:00, 28.99it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:27<00:00, 28.99it/s]een ignored: example_id, offset_mapping.
+ 24%|████████████████████▍                                                                | 24/100 [00:00<00:03, 24.89it/s]een ignored: example_id, offset_mapping.
+ 24%|████████████████████▍                                                                | 24/100 [00:00<00:03, 24.89it/s]een ignored: example_id, offset_mapping.
+ 74%|██████████████████████████████████████████████████████████████▉                      | 74/100 [00:03<00:01, 23.01it/s]een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.1856787491115849, 'f1_score': 0.208263841319153}
+{'jaccard_score': 0.21645021645021645, 'f1_score': 0.2196969696969697}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+{'loss': 0.365, 'learning_rate': 2.439344262295082e-06, 'epoch': 1.07}
+ 39%|████████████████████████████████▍                                                   | 164/424 [00:05<00:08, 29.00it/s]een ignored: example_id, offset_mapping.
+ 53%|████████████████████████████████████████████▍                                       | 224/424 [00:07<00:06, 29.00it/s]een ignored: example_id, offset_mapping.
+ 66%|███████████████████████████████████████████████████████▋                            | 281/424 [00:09<00:04, 29.01it/s]een ignored: example_id, offset_mapping.
+ 80%|███████████████████████████████████████████████████████████████████▌                | 341/424 [00:11<00:02, 28.99it/s]een ignored: example_id, offset_mapping.
+ 94%|██████████████████████████████████████████████████████████████████████████████▊     | 398/424 [00:13<00:00, 29.01it/s]een ignored: example_id, offset_mapping.
+  7%|█████▌                                                                               | 14/212 [00:00<00:14, 13.59it/s]een ignored: example_id, offset_mapping.
+  7%|█████▌                                                                               | 14/212 [00:00<00:14, 13.59it/s]een ignored: example_id, offset_mapping.
+ 20%|████████████████▊                                                                    | 42/212 [00:03<00:12, 13.77it/s]een ignored: example_id, offset_mapping.
+ 30%|█████████████████████████▋                                                           | 64/212 [00:04<00:10, 13.78it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 31%|██████████████████████████▎                                                          | 31/100 [00:01<00:02, 24.05it/s]een ignored: example_id, offset_mapping.
+ 31%|██████████████████████████▎                                                          | 31/100 [00:01<00:02, 24.05it/s]een ignored: example_id, offset_mapping.
+ 79%|███████████████████████████████████████████████████████████████████▏                 | 79/100 [00:03<00:00, 25.93it/s]een ignored: example_id, offset_mapping.
+Configuration saved in ckpts/devout-fire-36/checkpoint-1000/config.json                                                    een ignored: example_id, offset_mapping.
+Configuration saved in ckpts/devout-fire-36/checkpoint-1000/config.json                                                    een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.25161099265576875, 'f1_score': 0.2902830171486888}
+tokenizer config file saved in ckpts/devout-fire-36/checkpoint-1000/tokenizer_config.json                                  een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▏                                                         | 1001/3728 [20:46<10:12:21, 13.47s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+ 27%|█████████████████████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+  Num examples = 1693█████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+  Num examples = 1693█████▌                                                          | 1004/3728 [20:48<3:55:16,  5.18s/it]een ignored: example_id, offset_mapping.
+{'loss': 0.2852, 'learning_rate': 2.3499254843517138e-06, 'epoch': 1.18}
+ 32%|██████████████████████████▉                                                         | 136/424 [00:04<00:09, 29.04it/s]een ignored: example_id, offset_mapping.
+ 46%|██████████████████████████████████████▍                                             | 194/424 [00:06<00:07, 29.03it/s]een ignored: example_id, offset_mapping.
+ 60%|██████████████████████████████████████████████████▎                                 | 254/424 [00:08<00:05, 28.89it/s]een ignored: example_id, offset_mapping.
+ 74%|█████████████████████████████████████████████████████████████▊                      | 312/424 [00:10<00:03, 29.00it/s]een ignored: example_id, offset_mapping.
+ 87%|█████████████████████████████████████████████████████████████████████████▎          | 370/424 [00:12<00:01, 29.02it/s]een ignored: example_id, offset_mapping.
+  0%|                                                                                              | 0/212 [00:00<?, ?it/s]een ignored: example_id, offset_mapping.
+  0%|                                                                                              | 0/212 [00:00<?, ?it/s]een ignored: example_id, offset_mapping.
+ 14%|████████████                                                                         | 30/212 [00:02<00:13, 13.73it/s]een ignored: example_id, offset_mapping.
+ 27%|███████████████████████▎                                                             | 58/212 [00:04<00:11, 13.78it/s]een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▍                                                  | 86/212 [00:06<00:09, 13.78it/s]een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▍                                                  | 86/212 [00:06<00:09, 13.78it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:24<00:00, 28.82it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:24<00:00, 28.82it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:24<00:00, 28.82it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:24<00:00, 28.82it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:24<00:00, 28.82it/s]een ignored: example_id, offset_mapping.
+ 34%|████████████████████████████▉                                                        | 34/100 [00:01<00:02, 24.52it/s]een ignored: example_id, offset_mapping.
+ 82%|█████████████████████████████████████████████████████████████████████▋               | 82/100 [00:03<00:00, 23.16it/s]een ignored: example_id, offset_mapping.
+ 82%|█████████████████████████████████████████████████████████████████████▋               | 82/100 [00:03<00:00, 23.16it/s]een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.2804371002132196, 'f1_score': 0.32506622730503326}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▋                                                 | 175/424 [00:06<00:08, 28.90it/s]een ignored: example_id, offset_mapping.
+ 55%|██████████████████████████████████████████████▏                                     | 233/424 [00:08<00:06, 28.96it/s]een ignored: example_id, offset_mapping.
+ 69%|█████████████████████████████████████████████████████████▋                          | 291/424 [00:10<00:04, 28.97it/s]een ignored: example_id, offset_mapping.
+ 83%|█████████████████████████████████████████████████████████████████████▌              | 351/424 [00:12<00:02, 28.82it/s]een ignored: example_id, offset_mapping.
+ 96%|████████████████████████████████████████████████████████████████████████████████▊   | 408/424 [00:14<00:00, 28.96it/s]een ignored: example_id, offset_mapping.
+ 96%|████████████████████████████████████████████████████████████████████████████████▊   | 408/424 [00:14<00:00, 28.96it/s]een ignored: example_id, offset_mapping.
+  9%|████████                                                                             | 20/212 [00:01<00:13, 13.86it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▏                                                                 | 48/212 [00:03<00:11, 13.78it/s]een ignored: example_id, offset_mapping.
+ 36%|██████████████████████████████▍                                                      | 76/212 [00:05<00:09, 13.75it/s]een ignored: example_id, offset_mapping.
+ 48%|████████████████████████████████████████▍                                           | 102/212 [00:07<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 48%|████████████████████████████████████████▍                                           | 102/212 [00:07<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 48%|████████████████████████████████████████▍                                           | 102/212 [00:07<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 48%|████████████████████████████████████████▍                                           | 102/212 [00:07<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 48%|████████████████████████████████████████▍                                           | 102/212 [00:07<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:30<00:00, 28.91it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:30<00:00, 28.91it/s]een ignored: example_id, offset_mapping.
+ 43%|████████████████████████████████████▌                                                | 43/100 [00:01<00:02, 20.17it/s]een ignored: example_id, offset_mapping.
+ 94%|███████████████████████████████████████████████████████████████████████████████▉     | 94/100 [00:03<00:00, 28.05it/s]een ignored: example_id, offset_mapping.
+ 94%|███████████████████████████████████████████████████████████████████████████████▉     | 94/100 [00:03<00:00, 28.05it/s]een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.2708126036484246, 'f1_score': 0.31513966961728157}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+{'loss': 0.2805, 'learning_rate': 2.171087928464978e-06, 'epoch': 1.39}
+ 30%|█████████████████████████▎                                                          | 128/424 [00:04<00:10, 28.91it/s]een ignored: example_id, offset_mapping.
+ 44%|████████████████████████████████████▊                                               | 186/424 [00:06<00:08, 28.97it/s]een ignored: example_id, offset_mapping.
+ 58%|████████████████████████████████████████████████▎                                   | 244/424 [00:08<00:06, 28.99it/s]een ignored: example_id, offset_mapping.
+ 71%|███████████████████████████████████████████████████████████▋                        | 301/424 [00:10<00:04, 28.88it/s]een ignored: example_id, offset_mapping.
+ 85%|███████████████████████████████████████████████████████████████████████▋            | 362/424 [00:12<00:02, 28.86it/s]een ignored: example_id, offset_mapping.
+ 99%|███████████████████████████████████████████████████████████████████████████████████ | 419/424 [00:14<00:00, 28.88it/s]een ignored: example_id, offset_mapping.
+ 99%|███████████████████████████████████████████████████████████████████████████████████ | 419/424 [00:14<00:00, 28.88it/s]een ignored: example_id, offset_mapping.
+ 12%|██████████▍                                                                          | 26/212 [00:01<00:13, 13.77it/s]een ignored: example_id, offset_mapping.
+ 25%|████████████████████▊                                                                | 52/212 [00:03<00:11, 13.72it/s]een ignored: example_id, offset_mapping.
+ 38%|████████████████████████████████                                                     | 80/212 [00:05<00:09, 13.72it/s]een ignored: example_id, offset_mapping.
+ 51%|██████████████████████████████████████████▊                                         | 108/212 [00:07<00:07, 13.73it/s]een ignored: example_id, offset_mapping.
+ 51%|██████████████████████████████████████████▊                                         | 108/212 [00:07<00:07, 13.73it/s]een ignored: example_id, offset_mapping.
+ 51%|██████████████████████████████████████████▊                                         | 108/212 [00:07<00:07, 13.73it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:27<00:00, 28.89it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:27<00:00, 28.89it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:27<00:00, 28.89it/s]een ignored: example_id, offset_mapping.
+ 17%|██████████████▍                                                                      | 17/100 [00:00<00:03, 27.60it/s]een ignored: example_id, offset_mapping.
+ 66%|████████████████████████████████████████████████████████                             | 66/100 [00:02<00:01, 26.73it/s]een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.32475124378109455, 'f1_score': 0.36657828075738524}
+{'jaccard_score': 0.33939393939393936, 'f1_score': 0.3434343434343434}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+ 35%|█████████████████████████████▋                                                      | 150/424 [00:05<00:09, 28.87it/s]een ignored: example_id, offset_mapping.
+ 49%|█████████████████████████████████████████▏                                          | 208/424 [00:07<00:07, 28.95it/s]een ignored: example_id, offset_mapping.
+ 63%|████████████████████████████████████████████████████▋                               | 266/424 [00:09<00:05, 28.93it/s]een ignored: example_id, offset_mapping.
+ 76%|███████████████████████████████████████████████████████████████▉                    | 323/424 [00:11<00:03, 28.92it/s]een ignored: example_id, offset_mapping.
+ 90%|███████████████████████████████████████████████████████████████████████████▉        | 383/424 [00:13<00:01, 28.86it/s]een ignored: example_id, offset_mapping.
+  4%|███▏                                                                                  | 8/212 [00:00<00:13, 15.00it/s]een ignored: example_id, offset_mapping.
+  4%|███▏                                                                                  | 8/212 [00:00<00:13, 15.00it/s]een ignored: example_id, offset_mapping.
+ 17%|██████████████▍                                                                      | 36/212 [00:02<00:12, 13.76it/s]een ignored: example_id, offset_mapping.
+ 30%|█████████████████████████▋                                                           | 64/212 [00:04<00:10, 13.75it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 42%|████████████████████████████████████                                                 | 90/212 [00:06<00:08, 13.70it/s]een ignored: example_id, offset_mapping.
+ 34%|████████████████████████████▉                                                        | 34/100 [00:01<00:02, 24.49it/s]een ignored: example_id, offset_mapping.
+ 34%|████████████████████████████▉                                                        | 34/100 [00:01<00:02, 24.49it/s]een ignored: example_id, offset_mapping.
+ 82%|█████████████████████████████████████████████████████████████████████▋               | 82/100 [00:03<00:00, 22.94it/s]een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.3202025586353945, 'f1_score': 0.359293277203725}
+{'jaccard_score': 0.34949494949494947, 'f1_score': 0.3585858585858586}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+ 40%|█████████████████████████████████▎                                                  | 168/424 [00:05<00:08, 28.96it/s]een ignored: example_id, offset_mapping.
+ 53%|████████████████████████████████████████████▊                                       | 226/424 [00:07<00:06, 28.99it/s]een ignored: example_id, offset_mapping.
+ 67%|████████████████████████████████████████████████████████                            | 283/424 [00:09<00:04, 28.97it/s]een ignored: example_id, offset_mapping.
+ 81%|███████████████████████████████████████████████████████████████████▉                | 343/424 [00:11<00:02, 28.89it/s]een ignored: example_id, offset_mapping.
+ 94%|███████████████████████████████████████████████████████████████████████████████▏    | 400/424 [00:13<00:00, 28.95it/s]een ignored: example_id, offset_mapping.
+  8%|██████▍                                                                              | 16/212 [00:01<00:13, 14.00it/s]een ignored: example_id, offset_mapping.
+  8%|██████▍                                                                              | 16/212 [00:01<00:13, 14.00it/s]een ignored: example_id, offset_mapping.
+ 21%|█████████████████▋                                                                   | 44/212 [00:03<00:12, 13.74it/s]een ignored: example_id, offset_mapping.
+ 34%|████████████████████████████▊                                                        | 72/212 [00:05<00:10, 13.75it/s]een ignored: example_id, offset_mapping.
+ 47%|███████████████████████████████████████▌                                            | 100/212 [00:07<00:08, 13.73it/s]een ignored: example_id, offset_mapping.
+ 47%|███████████████████████████████████████▌                                            | 100/212 [00:07<00:08, 13.73it/s]een ignored: example_id, offset_mapping.
+ 47%|███████████████████████████████████████▌                                            | 100/212 [00:07<00:08, 13.73it/s]een ignored: example_id, offset_mapping.
+ 47%|███████████████████████████████████████▌                                            | 100/212 [00:07<00:08, 13.73it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:28<00:00, 28.94it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:28<00:00, 28.94it/s]een ignored: example_id, offset_mapping.
+  3%|██▌                                                                                   | 3/100 [00:00<00:07, 13.73it/s]een ignored: example_id, offset_mapping.
+ 50%|██████████████████████████████████████████▌                                          | 50/100 [00:02<00:02, 24.27it/s]een ignored: example_id, offset_mapping.
+Configuration saved in ckpts/devout-fire-36/checkpoint-1500/config.json                                                    een ignored: example_id, offset_mapping.
+Configuration saved in ckpts/devout-fire-36/checkpoint-1500/config.json                                                    een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.36746624022743424, 'f1_score': 0.4104652882967194}
+tokenizer config file saved in ckpts/devout-fire-36/checkpoint-1500/tokenizer_config.json                                  een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+  Num examples = 1693oint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+  Num examples = 1693oint [ckpts/devout-fire-36/checkpoint-500] due to args.save_total_limit                               een ignored: example_id, offset_mapping.
+ 36%|██████████████████████████████▌                                                     | 154/424 [00:05<00:09, 28.99it/s]een ignored: example_id, offset_mapping.
+ 50%|██████████████████████████████████████████                                          | 212/424 [00:07<00:07, 28.97it/s]een ignored: example_id, offset_mapping.
+ 64%|█████████████████████████████████████████████████████▍                              | 270/424 [00:09<00:05, 29.03it/s]een ignored: example_id, offset_mapping.
+ 78%|█████████████████████████████████████████████████████████████████▍                  | 330/424 [00:11<00:03, 28.97it/s]een ignored: example_id, offset_mapping.
+ 92%|████████████████████████████████████████████████████████████████████████████▊       | 388/424 [00:13<00:01, 28.98it/s]een ignored: example_id, offset_mapping.
+ 92%|████████████████████████████████████████████████████████████████████████████▊       | 388/424 [00:13<00:01, 28.98it/s]een ignored: example_id, offset_mapping.
+  5%|████                                                                                 | 10/212 [00:00<00:13, 14.49it/s]een ignored: example_id, offset_mapping.
+ 18%|███████████████▏                                                                     | 38/212 [00:02<00:12, 13.73it/s]een ignored: example_id, offset_mapping.
+ 31%|██████████████████████████▍                                                          | 66/212 [00:04<00:10, 13.76it/s]een ignored: example_id, offset_mapping.
+ 43%|████████████████████████████████████▉                                                | 92/212 [00:06<00:08, 13.74it/s]een ignored: example_id, offset_mapping.
+ 44%|█████████████████████████████████████▋                                               | 94/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 44%|█████████████████████████████████████▋                                               | 94/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 44%|█████████████████████████████████████▋                                               | 94/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+ 44%|█████████████████████████████████████▋                                               | 94/212 [00:06<00:08, 13.76it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:29<00:00, 29.06it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:29<00:00, 29.06it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▌                                                                 | 23/100 [00:00<00:03, 22.99it/s]een ignored: example_id, offset_mapping.
+ 70%|███████████████████████████████████████████████████████████▍                         | 70/100 [00:02<00:01, 28.99it/s]een ignored: example_id, offset_mapping.
+ 70%|███████████████████████████████████████████████████████████▍                         | 70/100 [00:02<00:01, 28.99it/s]een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.3248223169864961, 'f1_score': 0.36401964536292897}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+ 37%|██████████████████████████████▋                                                     | 155/424 [00:05<00:09, 28.91it/s]een ignored: example_id, offset_mapping.
+ 50%|██████████████████████████████████████████                                          | 212/424 [00:07<00:07, 28.88it/s]een ignored: example_id, offset_mapping.
+ 64%|█████████████████████████████████████████████████████▉                              | 272/424 [00:09<00:05, 28.84it/s]een ignored: example_id, offset_mapping.
+ 78%|█████████████████████████████████████████████████████████████████▍                  | 330/424 [00:11<00:03, 28.95it/s]een ignored: example_id, offset_mapping.
+ 91%|████████████████████████████████████████████████████████████████████████████▋       | 387/424 [00:13<00:01, 28.94it/s]een ignored: example_id, offset_mapping.
+ 91%|████████████████████████████████████████████████████████████████████████████▋       | 387/424 [00:13<00:01, 28.94it/s]een ignored: example_id, offset_mapping.
+  5%|████                                                                                 | 10/212 [00:00<00:13, 14.58it/s]een ignored: example_id, offset_mapping.
+ 18%|███████████████▏                                                                     | 38/212 [00:02<00:12, 13.77it/s]een ignored: example_id, offset_mapping.
+ 31%|██████████████████████████▍                                                          | 66/212 [00:04<00:10, 13.63it/s]een ignored: example_id, offset_mapping.
+ 44%|█████████████████████████████████████▋                                               | 94/212 [00:06<00:08, 13.74it/s]een ignored: example_id, offset_mapping.
+ 44%|█████████████████████████████████████▋                                               | 94/212 [00:06<00:08, 13.74it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:25<00:00, 28.86it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:25<00:00, 28.86it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:25<00:00, 28.86it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:25<00:00, 28.86it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:25<00:00, 28.86it/s]een ignored: example_id, offset_mapping.
+ 37%|███████████████████████████████▍                                                     | 37/100 [00:01<00:02, 21.22it/s]een ignored: example_id, offset_mapping.
+ 86%|█████████████████████████████████████████████████████████████████████████            | 86/100 [00:03<00:00, 21.89it/s]een ignored: example_id, offset_mapping.
+ 86%|█████████████████████████████████████████████████████████████████████████            | 86/100 [00:03<00:00, 21.89it/s]een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.3628464818763326, 'f1_score': 0.396689628779181}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+ 42%|██████████████████████████████████▊                                                 | 176/424 [00:06<00:08, 28.86it/s]een ignored: example_id, offset_mapping.
+ 55%|██████████████████████████████████████████████▏                                     | 233/424 [00:08<00:06, 28.90it/s]een ignored: example_id, offset_mapping.
+ 69%|██████████████████████████████████████████████████████████                          | 293/424 [00:10<00:04, 28.94it/s]een ignored: example_id, offset_mapping.
+ 83%|█████████████████████████████████████████████████████████████████████▎              | 350/424 [00:12<00:02, 28.87it/s]een ignored: example_id, offset_mapping.
+ 97%|█████████████████████████████████████████████████████████████████████████████████▏  | 410/424 [00:14<00:00, 28.90it/s]een ignored: example_id, offset_mapping.
+ 97%|█████████████████████████████████████████████████████████████████████████████████▏  | 410/424 [00:14<00:00, 28.90it/s]een ignored: example_id, offset_mapping.
+  9%|████████                                                                             | 20/212 [00:01<00:13, 13.87it/s]een ignored: example_id, offset_mapping.
+ 23%|███████████████████▏                                                                 | 48/212 [00:03<00:11, 13.74it/s]een ignored: example_id, offset_mapping.
+ 36%|██████████████████████████████▍                                                      | 76/212 [00:05<00:09, 13.75it/s]een ignored: example_id, offset_mapping.
+ 49%|█████████████████████████████████████████▏                                          | 104/212 [00:07<00:07, 13.74it/s]een ignored: example_id, offset_mapping.
+ 49%|█████████████████████████████████████████▏                                          | 104/212 [00:07<00:07, 13.74it/s]een ignored: example_id, offset_mapping.
+ 49%|█████████████████████████████████████████▏                                          | 104/212 [00:07<00:07, 13.74it/s]een ignored: example_id, offset_mapping.
+ 49%|█████████████████████████████████████████▏                                          | 104/212 [00:07<00:07, 13.74it/s]een ignored: example_id, offset_mapping.
+ 49%|█████████████████████████████████████████▏                                          | 104/212 [00:07<00:07, 13.74it/s]een ignored: example_id, offset_mapping.
+  0%|                                                                                              | 0/100 [00:00<?, ?it/s]een ignored: example_id, offset_mapping.
+  0%|                                                                                              | 0/100 [00:00<?, ?it/s]een ignored: example_id, offset_mapping.
+ 43%|████████████████████████████████████▌                                                | 43/100 [00:01<00:02, 20.32it/s]een ignored: example_id, offset_mapping.
+ 94%|███████████████████████████████████████████████████████████████████████████████▉     | 94/100 [00:03<00:00, 28.33it/s]een ignored: example_id, offset_mapping.
+ 94%|███████████████████████████████████████████████████████████████████████████████▉     | 94/100 [00:03<00:00, 28.33it/s]een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.35988509831793414, 'f1_score': 0.4004209720627631}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+{'loss': 0.2278, 'learning_rate': 1.6345752608047692e-06, 'epoch': 2.04}
+ 30%|█████████████████████████▎                                                          | 128/424 [00:04<00:10, 28.94it/s]een ignored: example_id, offset_mapping.
+ 45%|█████████████████████████████████████▍                                              | 189/424 [00:06<00:08, 28.91it/s]een ignored: example_id, offset_mapping.
+ 58%|████████████████████████████████████████████████▉                                   | 247/424 [00:08<00:06, 28.96it/s]een ignored: example_id, offset_mapping.
+ 72%|████████████████████████████████████████████████████████████▏                       | 304/424 [00:10<00:04, 28.90it/s]een ignored: example_id, offset_mapping.
+ 86%|████████████████████████████████████████████████████████████████████████            | 364/424 [00:12<00:02, 28.89it/s]een ignored: example_id, offset_mapping.
+ 99%|███████████████████████████████████████████████████████████████████████████████████▍| 421/424 [00:14<00:00, 28.92it/s]een ignored: example_id, offset_mapping.
+ 99%|███████████████████████████████████████████████████████████████████████████████████▍| 421/424 [00:14<00:00, 28.92it/s]een ignored: example_id, offset_mapping.
+ 12%|██████████▍                                                                          | 26/212 [00:01<00:13, 13.78it/s]een ignored: example_id, offset_mapping.
+ 25%|█████████████████████▋                                                               | 54/212 [00:03<00:11, 13.75it/s]een ignored: example_id, offset_mapping.
+ 39%|████████████████████████████████▉                                                    | 82/212 [00:05<00:09, 13.74it/s]een ignored: example_id, offset_mapping.
+ 52%|███████████████████████████████████████████▌                                        | 110/212 [00:07<00:07, 13.74it/s]een ignored: example_id, offset_mapping.
+ 52%|███████████████████████████████████████████▌                                        | 110/212 [00:07<00:07, 13.74it/s]een ignored: example_id, offset_mapping.
+ 52%|███████████████████████████████████████████▌                                        | 110/212 [00:07<00:07, 13.74it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:27<00:00, 28.93it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:27<00:00, 28.93it/s]een ignored: example_id, offset_mapping.
+100%|████████████████████████████████████████████████████████████████████████████████████| 424/424 [00:27<00:00, 28.93it/s]een ignored: example_id, offset_mapping.
+ 24%|████████████████████▍                                                                | 24/100 [00:01<00:03, 25.19it/s]een ignored: example_id, offset_mapping.
+ 74%|██████████████████████████████████████████████████████████████▉                      | 74/100 [00:03<00:01, 22.95it/s]een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.40142738687514806, 'f1_score': 0.43909026297085996}
+{'jaccard_score': 0.3181818181818182, 'f1_score': 0.3268398268398268}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+  Num examples = 1693                                                                                                      een ignored: example_id, offset_mapping.
+ 33%|███████████████████████████▉                                                        | 141/424 [00:04<00:09, 28.89it/s]een ignored: example_id, offset_mapping.
+ 47%|███████████████████████████████████████▍                                            | 199/424 [00:06<00:07, 28.88it/s]een ignored: example_id, offset_mapping.
+ 61%|██████████████████████████████████████████████████▉                                 | 257/424 [00:08<00:05, 28.85it/s]een ignored: example_id, offset_mapping.
+ 74%|██████████████████████████████████████████████████████████████▍                     | 315/424 [00:10<00:03, 28.89it/s]een ignored: example_id, offset_mapping.
+ 88%|█████████████████████████████████████████████████████████████████████████▋          | 372/424 [00:12<00:01, 28.79it/s]een ignored: example_id, offset_mapping.
+  1%|█▏                                                                                    | 3/212 [00:00<00:10, 20.51it/s]een ignored: example_id, offset_mapping.
+  1%|█▏                                                                                    | 3/212 [00:00<00:10, 20.51it/s]een ignored: example_id, offset_mapping.
+ 14%|████████████                                                                         | 30/212 [00:02<00:13, 13.72it/s]een ignored: example_id, offset_mapping.
+ 27%|███████████████████████▎                                                             | 58/212 [00:04<00:11, 13.69it/s]een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▍                                                  | 86/212 [00:06<00:09, 13.67it/s]een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▍                                                  | 86/212 [00:06<00:09, 13.67it/s]een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▍                                                  | 86/212 [00:06<00:09, 13.67it/s]een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▍                                                  | 86/212 [00:06<00:09, 13.67it/s]een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▍                                                  | 86/212 [00:06<00:09, 13.67it/s]een ignored: example_id, offset_mapping.
+ 41%|██████████████████████████████████▍                                                  | 86/212 [00:06<00:09, 13.67it/s]een ignored: example_id, offset_mapping.
+ 19%|████████████████▏                                                                    | 19/100 [00:00<00:03, 25.17it/s]een ignored: example_id, offset_mapping.
+ 19%|████████████████▏                                                                    | 19/100 [00:00<00:03, 25.17it/s]een ignored: example_id, offset_mapping.
+ 57%|████████████████████████████████████████████████▍                                    | 57/100 [00:02<00:01, 25.93it/s]een ignored: example_id, offset_mapping.
+ 97%|██████████████████████████████████████████████████████████████████████████████████▍  | 97/100 [00:04<00:00, 24.50it/s]een ignored: example_id, offset_mapping.
+ 97%|██████████████████████████████████████████████████████████████████████████████████▍  | 97/100 [00:04<00:00, 24.50it/s]een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.39902274342572847, 'f1_score': 0.4400852878464819}
+tokenizer config file saved in ckpts/devout-fire-36/checkpoint-2000/tokenizer_config.json                                  een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+Deleting older checkpoint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+  Num examples = 1693oint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+  Num examples = 1693oint [ckpts/devout-fire-36/checkpoint-1000] due to args.save_total_limit                              een ignored: example_id, offset_mapping.
+{'loss': 0.2055, 'learning_rate': 1.4557377049180328e-06, 'epoch': 2.25}
+ 32%|██████████████████████████▌                                                         | 134/424 [00:04<00:10, 28.95it/s]een ignored: example_id, offset_mapping.
+ 46%|██████████████████████████████████████▍                                             | 194/424 [00:06<00:07, 28.98it/s]een ignored: example_id, offset_mapping.
+ 59%|█████████████████████████████████████████████████▋                                  | 251/424 [00:08<00:05, 28.91it/s]een ignored: example_id, offset_mapping.
+ 73%|█████████████████████████████████████████████████████████████▌                      | 311/424 [00:10<00:03, 28.81it/s]een ignored: example_id, offset_mapping.
+ 87%|████████████████████████████████████████████████████████████████████████▉           | 368/424 [00:12<00:01, 28.92it/s]een ignored: example_id, offset_mapping.
+  0%|                                                                                              | 0/212 [00:00<?, ?it/s]een ignored: example_id, offset_mapping.
+  0%|                                                                                              | 0/212 [00:00<?, ?it/s]een ignored: example_id, offset_mapping.
+ 14%|████████████                                                                         | 30/212 [00:02<00:13, 13.75it/s]een ignored: example_id, offset_mapping.
+ 26%|██████████████████████▍                                                              | 56/212 [00:04<00:11, 13.72it/s]een ignored: example_id, offset_mapping.
+ 40%|█████████████████████████████████▋                                                   | 84/212 [00:06<00:09, 13.73it/s]een ignored: example_id, offset_mapping.
+ 40%|█████████████████████████████████▋                                                   | 84/212 [00:06<00:09, 13.73it/s]een ignored: example_id, offset_mapping.
+ 40%|█████████████████████████████████▋                                                   | 84/212 [00:06<00:09, 13.73it/s]een ignored: example_id, offset_mapping.
+ 40%|█████████████████████████████████▋                                                   | 84/212 [00:06<00:09, 13.73it/s]een ignored: example_id, offset_mapping.
+ 40%|█████████████████████████████████▋                                                   | 84/212 [00:06<00:09, 13.73it/s]een ignored: example_id, offset_mapping.
+ 40%|█████████████████████████████████▋                                                   | 84/212 [00:06<00:09, 13.73it/s]een ignored: example_id, offset_mapping.
+ 12%|██████████▏                                                                          | 12/100 [00:00<00:04, 21.94it/s]een ignored: example_id, offset_mapping.
+ 12%|██████████▏                                                                          | 12/100 [00:00<00:04, 21.94it/s]een ignored: example_id, offset_mapping.
+ 63%|█████████████████████████████████████████████████████▌                               | 63/100 [00:02<00:01, 28.41it/s]een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+{'jaccard_score': 0.42340085287846485, 'f1_score': 0.4701492537313433}
+{'jaccard_score': 0.28210678210678214, 'f1_score': 0.2889610389610389}
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.
+                                                                                                                           een ignored: example_id, offset_mapping.

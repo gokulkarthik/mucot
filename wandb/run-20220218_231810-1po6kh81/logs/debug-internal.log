@@ -1,0 +1,1186 @@
+2022-02-18 23:18:12,115 INFO    MainThread:1615632 [internal.py:wandb_internal():89] W&B internal server running at pid: 1615632, started at: 2022-02-18 23:18:12.114351
+2022-02-18 23:18:12,117 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: check_version
+2022-02-18 23:18:12,117 INFO    WriterThread:1615632 [datastore.py:open_for_write():77] open: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/run-1po6kh81.wandb
+2022-02-18 23:18:12,120 DEBUG   SenderThread:1615632 [sender.py:send():235] send: header
+2022-02-18 23:18:12,120 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: check_version
+2022-02-18 23:18:12,189 DEBUG   SenderThread:1615632 [sender.py:send():235] send: run
+2022-02-18 23:18:12,492 INFO    SenderThread:1615632 [dir_watcher.py:__init__():169] watching files in: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files
+2022-02-18 23:18:12,492 INFO    SenderThread:1615632 [sender.py:_start_run_threads():809] run started: 1po6kh81 with start time 1645211891
+2022-02-18 23:18:12,492 DEBUG   SenderThread:1615632 [sender.py:send():235] send: summary
+2022-02-18 23:18:12,493 INFO    SenderThread:1615632 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-18 23:18:12,494 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: run_start
+2022-02-18 23:18:12,497 DEBUG   HandlerThread:1615632 [meta.py:__init__():36] meta init
+2022-02-18 23:18:12,497 DEBUG   HandlerThread:1615632 [meta.py:__init__():50] meta init done
+2022-02-18 23:18:12,497 DEBUG   HandlerThread:1615632 [meta.py:probe():210] probe
+2022-02-18 23:18:12,504 DEBUG   HandlerThread:1615632 [meta.py:_setup_git():200] setup git
+2022-02-18 23:18:12,526 DEBUG   HandlerThread:1615632 [meta.py:_setup_git():207] setup git done
+2022-02-18 23:18:12,526 DEBUG   HandlerThread:1615632 [meta.py:_save_code():88] save code
+2022-02-18 23:18:12,533 DEBUG   HandlerThread:1615632 [meta.py:_save_code():109] save code done
+2022-02-18 23:18:12,533 DEBUG   HandlerThread:1615632 [meta.py:_save_patches():126] save patches
+2022-02-18 23:18:12,649 DEBUG   HandlerThread:1615632 [meta.py:_save_patches():168] save patches done
+2022-02-18 23:18:12,649 DEBUG   HandlerThread:1615632 [meta.py:_save_pip():54] save pip
+2022-02-18 23:18:12,651 DEBUG   HandlerThread:1615632 [meta.py:_save_pip():68] save pip done
+2022-02-18 23:18:12,651 DEBUG   HandlerThread:1615632 [meta.py:_save_conda():75] save conda
+2022-02-18 23:18:12,655 ERROR   HandlerThread:1615632 [meta.py:_save_conda():84] Error saving conda packages
+Traceback (most recent call last):
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/wandb/sdk/internal/meta.py", line 80, in _save_conda
+    subprocess.call(
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2022-02-18 23:18:12,682 DEBUG   HandlerThread:1615632 [meta.py:_save_conda():85] save conda done
+2022-02-18 23:18:12,682 DEBUG   HandlerThread:1615632 [meta.py:probe():248] probe done
+2022-02-18 23:18:12,726 DEBUG   SenderThread:1615632 [sender.py:send():235] send: files
+2022-02-18 23:18:12,726 INFO    SenderThread:1615632 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-18 23:18:12,727 INFO    SenderThread:1615632 [sender.py:_save_file():944] saving file code/main.py with policy now
+2022-02-18 23:18:12,727 INFO    SenderThread:1615632 [sender.py:_save_file():944] saving file diff.patch with policy now
+2022-02-18 23:18:12,734 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:18:12,734 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:18:12,993 DEBUG   SenderThread:1615632 [sender.py:send():235] send: config
+2022-02-18 23:18:13,495 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:13,496 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/diff.patch
+2022-02-18 23:18:13,496 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/conda-environment.yaml
+2022-02-18 23:18:13,496 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/requirements.txt
+2022-02-18 23:18:13,496 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/wandb-summary.json
+2022-02-18 23:18:13,496 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/wandb-metadata.json
+2022-02-18 23:18:13,496 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/code/main.py
+2022-02-18 23:18:13,496 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/code
+2022-02-18 23:18:13,570 INFO    Thread-11 :1615632 [upload_job.py:push():137] Uploaded file /tmp/tmp_ii231plwandb/gxpm9eqa-wandb-metadata.json
+2022-02-18 23:18:13,578 INFO    Thread-13 :1615632 [upload_job.py:push():137] Uploaded file /tmp/tmp_ii231plwandb/3ou4xbzq-diff.patch
+2022-02-18 23:18:13,583 INFO    Thread-12 :1615632 [upload_job.py:push():137] Uploaded file /tmp/tmp_ii231plwandb/38krqj8j-code/main.py
+2022-02-18 23:18:27,994 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:18:27,995 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:18:33,734 DEBUG   SenderThread:1615632 [sender.py:send():235] send: config
+2022-02-18 23:18:33,735 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:18:33,735 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:18:33,735 WARNING SenderThread:1615632 [sender.py:send_metric():902] Seen metric with glob (shouldnt happen)
+2022-02-18 23:18:35,533 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:37,536 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:39,538 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:40,768 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:18:41,541 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:43,278 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:18:43,278 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:18:43,543 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:43,543 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/config.yaml
+2022-02-18 23:18:45,545 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:47,548 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:49,550 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:51,553 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:53,555 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:55,557 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:57,560 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:18:58,532 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:18:58,532 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:18:59,564 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:01,566 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:03,568 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:05,571 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:07,573 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:09,576 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:11,042 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:19:11,578 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:13,581 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:13,794 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:19:13,794 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:19:15,583 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:17,586 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:19,588 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:21,591 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:23,593 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:25,596 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:27,599 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:29,055 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:19:29,055 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:19:29,601 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:31,604 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:33,606 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:35,608 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:37,611 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:39,614 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:41,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:19:41,616 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:43,620 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:44,314 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:19:44,315 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:19:45,622 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:47,626 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:49,628 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:51,631 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:53,634 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:55,636 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:57,639 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:19:59,567 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:19:59,567 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:19:59,641 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:01,644 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:03,646 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:05,648 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:07,650 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:09,652 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:11,576 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:20:11,655 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:13,657 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:14,841 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:20:14,842 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:20:15,660 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:17,662 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:19,665 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:21,667 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:23,669 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:25,672 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:27,674 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:29,676 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:30,133 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:20:30,134 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:20:31,679 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:33,681 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:35,684 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:37,686 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:39,688 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:41,691 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:41,839 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:20:43,694 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:45,646 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:20:45,646 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:20:45,696 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:47,700 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:49,702 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:51,705 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:53,707 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:55,710 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:57,713 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:20:59,715 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:00,904 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:21:00,904 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:21:01,717 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:03,720 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:05,723 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:07,725 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:09,727 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:11,729 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:12,098 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:21:13,732 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:15,734 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:16,161 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:21:16,161 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:21:17,737 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:19,739 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:21,741 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:23,744 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:25,746 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:27,749 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:29,751 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:31,429 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:21:31,429 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:21:31,753 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:33,755 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:35,758 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:37,760 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:39,762 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:41,765 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:42,362 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:21:43,768 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:45,770 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:46,687 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:21:46,687 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:21:47,774 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:49,776 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:51,779 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:53,781 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:55,784 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:57,787 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:21:59,789 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:01,791 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:01,955 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:22:01,956 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:22:03,793 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:05,796 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:07,798 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:09,800 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:11,802 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:12,621 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:22:13,805 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:15,807 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:17,216 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:22:17,216 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:22:17,809 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:19,812 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:21,814 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:23,816 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:25,819 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:27,821 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:29,824 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:31,826 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:32,492 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:22:32,492 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:22:33,829 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:35,831 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:37,834 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:39,837 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:41,840 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:42,874 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:22:43,843 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:45,845 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:47,764 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:22:47,764 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:22:47,849 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:49,852 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:51,854 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:53,856 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:55,859 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:57,861 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:22:59,864 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:01,866 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:03,029 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:23:03,029 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:23:03,869 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:05,871 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:07,873 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:09,875 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:11,878 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:13,140 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:23:13,881 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:15,883 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:17,886 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:18,319 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:23:18,319 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:23:19,889 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:21,891 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:23,894 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:25,896 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:27,899 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:29,906 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:31,909 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:33,579 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:23:33,579 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:23:33,911 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:35,913 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:37,916 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:39,918 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:41,921 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:43,406 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:23:43,924 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:45,926 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:47,930 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:48,840 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:23:48,840 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:23:49,933 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:51,936 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:53,938 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:55,940 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:57,943 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:23:59,945 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:01,947 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:03,950 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:04,101 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:24:04,101 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:24:05,952 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:07,954 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:09,956 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:11,959 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:13,672 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:24:13,961 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:15,964 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:17,966 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:19,390 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:24:19,390 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:24:19,969 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:21,971 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:23,974 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:25,976 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:27,979 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:29,981 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:31,984 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:33,987 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:34,645 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:24:34,645 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:24:35,989 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:37,992 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:39,995 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:41,997 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:43,948 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:24:44,000 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:46,003 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:48,008 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:49,909 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:24:49,910 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:24:50,011 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:52,013 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:54,015 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:56,018 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:24:58,021 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:00,023 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:02,026 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:04,028 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:05,185 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:25:05,185 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:25:06,031 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:08,033 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:10,035 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:12,038 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:14,041 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:14,207 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:25:16,043 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:18,046 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:20,048 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:20,449 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:25:20,449 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:25:22,051 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:24,053 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:26,056 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:28,059 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:30,062 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:32,064 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:34,066 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:35,714 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:25:35,714 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:25:36,069 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:38,071 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:40,074 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:42,076 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:44,079 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:44,470 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:25:46,081 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:48,085 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:50,088 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:50,981 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:25:50,981 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:25:52,090 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:54,092 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:56,095 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:25:58,098 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:00,101 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:02,103 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:04,105 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:06,108 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:06,249 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:26:06,249 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:26:08,110 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:10,130 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:12,132 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:14,134 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:14,732 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:26:16,137 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:18,140 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:20,142 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:21,507 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:26:21,507 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:26:22,144 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:24,147 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:26,150 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:28,152 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:30,155 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:32,157 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:34,160 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:36,163 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:36,761 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:26:36,761 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:26:38,165 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:40,168 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:42,170 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:44,173 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:44,988 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:26:46,175 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:48,180 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:50,182 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:52,029 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:26:52,029 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:26:52,185 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:54,188 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:56,190 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:26:58,193 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:00,196 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:02,199 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:04,201 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:06,204 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:07,285 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:27:07,285 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:27:08,206 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:10,209 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:12,211 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:14,213 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:15,249 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:27:16,216 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:18,219 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:20,221 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:22,224 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:22,549 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:27:22,549 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:27:24,226 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:26,229 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:28,231 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:30,234 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:32,236 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:34,239 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:36,242 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:37,821 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:27:37,822 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:27:38,244 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:40,246 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:42,249 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:44,252 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:45,511 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:27:46,254 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:48,259 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:50,261 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:52,264 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:53,081 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:27:53,081 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:27:54,266 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:56,269 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:27:58,272 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:00,274 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:02,277 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:04,280 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:06,282 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:08,284 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:08,358 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:28:08,358 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:28:10,286 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:12,289 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:14,291 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:15,774 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:28:16,294 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:18,296 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:20,298 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:22,301 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:23,621 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:28:23,621 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:28:24,303 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:26,306 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:28,308 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:30,311 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:32,314 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:34,316 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:36,318 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:38,321 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:38,882 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:28:38,882 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:28:40,323 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:42,326 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:44,329 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:46,039 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:28:46,331 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:48,335 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:50,337 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:52,340 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:54,138 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:28:54,138 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:28:54,343 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:56,346 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:28:58,348 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:00,350 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:02,353 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:04,355 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:06,358 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:08,359 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:09,393 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:29:09,393 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:29:10,362 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:12,364 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:14,367 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:16,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:29:16,370 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:18,372 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:20,375 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:22,377 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:24,380 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:24,661 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:29:24,661 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:29:26,383 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:28,385 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:30,388 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:32,390 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:34,392 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:36,395 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:38,397 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:39,945 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:29:39,946 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:29:40,400 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:42,403 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:44,405 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:46,408 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:46,566 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:29:48,413 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:50,415 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:52,418 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:54,420 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:55,210 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:29:55,211 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:29:56,423 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:29:58,425 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:00,428 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:02,431 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:04,433 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:06,435 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:08,438 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:10,440 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:10,474 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:30:10,474 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:30:12,443 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:14,445 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:16,447 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:16,839 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:30:18,450 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:20,453 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:22,455 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:24,458 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:26,460 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:26,770 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:30:26,770 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:30:28,463 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:30,465 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:32,467 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:34,470 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:36,472 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:38,475 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:40,477 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:42,034 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:30:42,034 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:30:42,480 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:44,482 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:46,485 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:47,097 DEBUG   SenderThread:1615632 [sender.py:send():235] send: stats
+2022-02-18 23:30:48,489 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:50,491 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:52,494 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:54,496 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:56,499 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:30:57,300 DEBUG   HandlerThread:1615632 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 23:30:57,300 DEBUG   SenderThread:1615632 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 23:30:58,501 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:31:00,504 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:31:02,506 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:31:04,508 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:31:06,511 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:31:08,513 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:31:10,196 WARNING MainThread:1615632 [internal.py:wandb_internal():152] Internal process interrupt: 1
+2022-02-18 23:31:10,277 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,282 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,283 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,283 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,283 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,289 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,290 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,291 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,292 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,292 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,292 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,292 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,292 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,292 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,297 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,297 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,297 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,297 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,297 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,298 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,299 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,300 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,301 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,301 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,301 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,306 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,307 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,308 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,309 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,310 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,310 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,310 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,313 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,314 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,315 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,316 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,317 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,318 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,319 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,320 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,321 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,322 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,323 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,324 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,325 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,326 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,327 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,328 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,329 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,330 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: metric
+2022-02-18 23:31:10,331 DEBUG   SenderThread:1615632 [sender.py:send():235] send: history
+2022-02-18 23:31:10,351 DEBUG   SenderThread:1615632 [sender.py:send():235] send: summary
+2022-02-18 23:31:10,378 INFO    SenderThread:1615632 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-18 23:31:10,452 WARNING MainThread:1615632 [internal.py:wandb_internal():152] Internal process interrupt: 2
+2022-02-18 23:31:10,452 ERROR   MainThread:1615632 [internal.py:wandb_internal():155] Internal process interrupted.
+2022-02-18 23:31:10,515 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:31:10,515 INFO    Thread-8  :1615632 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/wandb-summary.json
+2022-02-18 23:31:11,314 INFO    HandlerThread:1615632 [handler.py:finish():739] shutting down handler
+2022-02-18 23:31:11,371 INFO    WriterThread:1615632 [datastore.py:close():281] close: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/run-1po6kh81.wandb
+2022-02-18 23:31:11,379 INFO    SenderThread:1615632 [sender.py:finish():1075] shutting down sender
+2022-02-18 23:31:11,379 INFO    SenderThread:1615632 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-18 23:31:11,519 INFO    SenderThread:1615632 [dir_watcher.py:finish():313] scan: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files
+2022-02-18 23:31:11,520 INFO    SenderThread:1615632 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/requirements.txt requirements.txt
+2022-02-18 23:31:11,520 INFO    SenderThread:1615632 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/config.yaml config.yaml
+2022-02-18 23:31:11,520 INFO    SenderThread:1615632 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/diff.patch diff.patch
+2022-02-18 23:31:11,520 INFO    SenderThread:1615632 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/conda-environment.yaml conda-environment.yaml
+2022-02-18 23:31:11,520 INFO    SenderThread:1615632 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log output.log
+2022-02-18 23:31:11,520 INFO    SenderThread:1615632 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/wandb-summary.json wandb-summary.json
+2022-02-18 23:31:11,521 INFO    SenderThread:1615632 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/wandb-metadata.json wandb-metadata.json
+2022-02-18 23:31:11,527 INFO    SenderThread:1615632 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/code/main.py code/main.py
+2022-02-18 23:31:11,528 INFO    SenderThread:1615632 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-18 23:31:11,528 INFO    SenderThread:1615632 [file_pusher.py:join():182] waiting for file pusher
+2022-02-18 23:31:12,355 INFO    Thread-15 :1615632 [upload_job.py:push():137] Uploaded file /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/config.yaml
+2022-02-18 23:31:12,382 INFO    Thread-14 :1615632 [upload_job.py:push():137] Uploaded file /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/requirements.txt
+2022-02-18 23:31:12,397 INFO    Thread-16 :1615632 [upload_job.py:push():137] Uploaded file /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/output.log
+2022-02-18 23:31:12,899 INFO    Thread-17 :1615632 [upload_job.py:push():137] Uploaded file /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220218_231810-1po6kh81/files/wandb-summary.json
+2022-02-18 23:31:15,009 INFO    MainThread:1615632 [internal.py:handle_exit():79] Internal process exited

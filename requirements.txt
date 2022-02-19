@@ -1,5 +1,8 @@
+datasets
 numpy
 pandas
 scikit-learn
 torch
 transformers
+tqdm
+wandb

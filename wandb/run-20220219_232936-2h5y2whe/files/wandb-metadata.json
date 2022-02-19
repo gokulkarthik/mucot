@@ -1,0 +1,38 @@
+{
+    "os": "Linux-5.4.153-ql-generic-12.0-12-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-02-19T19:29:37.614291",
+    "startedAt": "2022-02-19T19:29:36.333537",
+    "docker": null,
+    "gpu": "Quadro RTX 6000",
+    "gpu_count": 1,
+    "cpu_count": 32,
+    "cuda": null,
+    "args": [
+        "--dataset",
+        "chaii",
+        "--langs",
+        "hi",
+        "ta",
+        "te^",
+        "ml^",
+        "--num_epochs",
+        "3",
+        "--model_ckpt",
+        "bert-base-multilingual-cased",
+        "--eval",
+        "False"
+    ],
+    "state": "running",
+    "program": "/home/gokul.kumar/Desktop/multilingual-qa/main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/gokulkarthik/multilingual-qa.git",
+        "commit": "3b25e2c26aa66e00bb7294892ad70143736346ed"
+    },
+    "email": "gokulkarthikk@gmail.com",
+    "root": "/home/gokul.kumar/Desktop/multilingual-qa",
+    "host": "ws-l3-004",
+    "username": "gokul.kumar",
+    "executable": "/home/gokul.kumar/.conda/envs/mlqa/bin/python"
+}

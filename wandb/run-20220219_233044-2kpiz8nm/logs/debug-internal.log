@@ -1,0 +1,1048 @@
+2022-02-19 23:30:45,544 INFO    MainThread:3954764 [internal.py:wandb_internal():89] W&B internal server running at pid: 3954764, started at: 2022-02-19 23:30:45.544260
+2022-02-19 23:30:45,547 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: check_version
+2022-02-19 23:30:45,547 INFO    WriterThread:3954764 [datastore.py:open_for_write():77] open: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/run-2kpiz8nm.wandb
+2022-02-19 23:30:45,551 DEBUG   SenderThread:3954764 [sender.py:send():235] send: header
+2022-02-19 23:30:45,551 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: check_version
+2022-02-19 23:30:45,637 DEBUG   SenderThread:3954764 [sender.py:send():235] send: run
+2022-02-19 23:30:45,951 INFO    SenderThread:3954764 [dir_watcher.py:__init__():169] watching files in: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files
+2022-02-19 23:30:45,951 INFO    SenderThread:3954764 [sender.py:_start_run_threads():809] run started: 2kpiz8nm with start time 1645299044
+2022-02-19 23:30:45,952 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:30:45,952 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:30:45,953 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: run_start
+2022-02-19 23:30:45,960 DEBUG   HandlerThread:3954764 [meta.py:__init__():36] meta init
+2022-02-19 23:30:45,960 DEBUG   HandlerThread:3954764 [meta.py:__init__():50] meta init done
+2022-02-19 23:30:45,960 DEBUG   HandlerThread:3954764 [meta.py:probe():210] probe
+2022-02-19 23:30:45,968 DEBUG   HandlerThread:3954764 [meta.py:_setup_git():200] setup git
+2022-02-19 23:30:45,994 DEBUG   HandlerThread:3954764 [meta.py:_setup_git():207] setup git done
+2022-02-19 23:30:45,995 DEBUG   HandlerThread:3954764 [meta.py:_save_code():88] save code
+2022-02-19 23:30:46,009 DEBUG   HandlerThread:3954764 [meta.py:_save_code():109] save code done
+2022-02-19 23:30:46,010 DEBUG   HandlerThread:3954764 [meta.py:_save_patches():126] save patches
+2022-02-19 23:30:46,082 DEBUG   HandlerThread:3954764 [meta.py:_save_patches():168] save patches done
+2022-02-19 23:30:46,082 DEBUG   HandlerThread:3954764 [meta.py:_save_pip():54] save pip
+2022-02-19 23:30:46,084 DEBUG   HandlerThread:3954764 [meta.py:_save_pip():68] save pip done
+2022-02-19 23:30:46,084 DEBUG   HandlerThread:3954764 [meta.py:_save_conda():75] save conda
+2022-02-19 23:30:46,089 ERROR   HandlerThread:3954764 [meta.py:_save_conda():84] Error saving conda packages
+Traceback (most recent call last):
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/site-packages/wandb/sdk/internal/meta.py", line 80, in _save_conda
+    subprocess.call(
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/gokul.kumar/.conda/envs/mlqa/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2022-02-19 23:30:46,091 DEBUG   HandlerThread:3954764 [meta.py:_save_conda():85] save conda done
+2022-02-19 23:30:46,092 DEBUG   HandlerThread:3954764 [meta.py:probe():248] probe done
+2022-02-19 23:30:46,100 DEBUG   SenderThread:3954764 [sender.py:send():235] send: files
+2022-02-19 23:30:46,100 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-19 23:30:46,101 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file code/main.py with policy now
+2022-02-19 23:30:46,102 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file diff.patch with policy now
+2022-02-19 23:30:46,108 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:30:46,112 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:30:46,387 DEBUG   SenderThread:3954764 [sender.py:send():235] send: config
+2022-02-19 23:30:46,955 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:30:46,956 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/diff.patch
+2022-02-19 23:30:46,956 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/code/main.py
+2022-02-19 23:30:46,956 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/conda-environment.yaml
+2022-02-19 23:30:46,957 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-metadata.json
+2022-02-19 23:30:46,957 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/requirements.txt
+2022-02-19 23:30:46,958 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:30:46,958 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/code
+2022-02-19 23:30:47,079 INFO    Thread-11 :3954764 [upload_job.py:push():137] Uploaded file /tmp/tmpcp976l55wandb/7bcwm3d5-wandb-metadata.json
+2022-02-19 23:30:47,103 INFO    Thread-12 :3954764 [upload_job.py:push():137] Uploaded file /tmp/tmpcp976l55wandb/2rhlf613-code/main.py
+2022-02-19 23:30:47,125 INFO    Thread-13 :3954764 [upload_job.py:push():137] Uploaded file /tmp/tmpcp976l55wandb/2qb4rivh-diff.patch
+2022-02-19 23:30:51,588 DEBUG   SenderThread:3954764 [sender.py:send():235] send: config
+2022-02-19 23:30:51,591 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:30:51,591 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:30:51,591 WARNING SenderThread:3954764 [sender.py:send_metric():902] Seen metric with glob (shouldnt happen)
+2022-02-19 23:30:52,959 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:30:54,961 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:30:56,963 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:30:58,966 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:00,967 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:01,389 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:31:01,389 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:31:02,969 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:04,971 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:06,973 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:08,975 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:09,575 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:09,575 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:09,575 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:09,576 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:09,576 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:09,577 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:09,976 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:31:10,978 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:12,980 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:14,486 DEBUG   SenderThread:3954764 [sender.py:send():235] send: stats
+2022-02-19 23:31:14,982 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:16,666 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:31:16,666 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:31:16,984 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/config.yaml
+2022-02-19 23:31:16,984 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:18,044 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:18,044 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:18,045 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:18,045 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:18,045 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:18,046 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:18,047 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:18,986 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:31:18,986 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:20,988 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:22,990 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:24,992 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:26,935 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:26,937 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:26,940 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:26,940 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:26,941 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:26,942 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:26,942 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:26,942 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:26,942 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:26,944 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:26,944 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:26,944 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:26,944 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:26,945 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:26,946 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:26,994 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:31:26,994 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:28,996 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:30,997 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:31,944 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:31:31,945 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:31:33,000 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:34,067 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:34,067 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:34,067 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:34,068 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:34,069 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:34,069 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:34,069 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:34,070 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:34,070 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:34,071 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:34,071 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:34,071 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:34,072 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:34,072 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:34,073 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:35,002 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:31:35,002 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:37,004 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:39,006 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:41,008 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:43,009 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:45,011 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:45,021 DEBUG   SenderThread:3954764 [sender.py:send():235] send: stats
+2022-02-19 23:31:47,013 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:47,220 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:31:47,220 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:31:48,014 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/config.yaml
+2022-02-19 23:31:49,015 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:51,017 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:51,597 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,603 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,608 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,614 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,620 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,625 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,628 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,628 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,629 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,629 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,629 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,629 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,630 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,630 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,630 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,630 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,631 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,631 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,631 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,631 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,631 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,631 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,632 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,632 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,632 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,632 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,632 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,632 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,633 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,633 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,633 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,633 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,633 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,634 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,634 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,634 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,634 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,634 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,637 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,637 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,637 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,637 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,637 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,638 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,638 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,638 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,638 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,638 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,638 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,639 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,639 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,639 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,639 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,639 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,639 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,640 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,640 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,640 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,640 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,640 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,640 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,641 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,641 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,641 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,641 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,641 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,641 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,642 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,642 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,642 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,642 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,642 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,642 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,642 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,643 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,643 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,643 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,643 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,643 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,643 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,643 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,644 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,644 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,644 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,644 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,644 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,644 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,644 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,644 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,645 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,645 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,645 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,645 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,645 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,645 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,645 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,645 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,647 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,647 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,647 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,647 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,647 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,647 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,647 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,648 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,648 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,648 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,648 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,648 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,648 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,648 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,648 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,649 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,649 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,649 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,649 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,649 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,649 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,649 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,650 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,650 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,650 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,650 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,650 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,650 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,650 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,650 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,651 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,651 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,651 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,651 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,651 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,651 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,652 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,652 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,652 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,652 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,652 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,652 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,652 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,652 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,653 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,653 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,653 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,653 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,653 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,653 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,653 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,653 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,654 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,654 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,654 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,654 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,654 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,654 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,654 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,654 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,655 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,655 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,655 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,655 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,655 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,655 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,655 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,656 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,656 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,656 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,656 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,656 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,656 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,656 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,657 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,657 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,657 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,657 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,657 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,657 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,657 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,658 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,658 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,658 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,658 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,658 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,658 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,658 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,659 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,659 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,659 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,659 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,659 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,659 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,659 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,659 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,660 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,660 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,660 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,660 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,660 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,660 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,660 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,660 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,661 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,661 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,661 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,661 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,661 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,661 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,661 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,662 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,662 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,662 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,662 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,662 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,662 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,662 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,662 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,663 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,663 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,663 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,663 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,663 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,663 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,663 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,663 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,664 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,664 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,664 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,664 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,664 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,664 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,664 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,664 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,665 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,665 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,665 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,665 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,665 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,665 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,665 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,666 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,666 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,666 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,666 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,666 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,666 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,666 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,667 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,667 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,667 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,667 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,667 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,667 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,667 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,668 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,668 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,668 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,668 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,668 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,668 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,668 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,669 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,669 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,669 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,669 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,669 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,669 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,669 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,669 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,670 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,670 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,670 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,670 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,670 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,670 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,670 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,671 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,671 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,671 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,671 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,671 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,671 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,671 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,671 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,672 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,672 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,672 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,672 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,672 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,672 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,672 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,672 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,673 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,673 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,673 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,673 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,673 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,673 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,673 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,675 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,675 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,675 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,675 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,675 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,675 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,675 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,676 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,676 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,676 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,676 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,676 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,676 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,676 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,677 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,677 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,677 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,677 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,677 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,677 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,677 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,677 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,679 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,679 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,679 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,679 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,679 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,679 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,679 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,680 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,680 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,680 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,680 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,680 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,680 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,680 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,681 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,681 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,681 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,681 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,682 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,682 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,682 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,682 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,682 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,682 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,683 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,683 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,683 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,683 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,683 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,683 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,684 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,684 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,684 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,684 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,684 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,684 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,685 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,685 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,685 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,685 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,685 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,686 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,686 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,686 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,686 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,686 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,686 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,686 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,687 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,687 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,687 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,687 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,687 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,687 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,688 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,688 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,688 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,688 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,688 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,688 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,689 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,689 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,689 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,689 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,689 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,689 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,690 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,690 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,690 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,690 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,690 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,690 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,691 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,691 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,691 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,691 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,691 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,691 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,692 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,692 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,692 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,692 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,692 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,692 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,693 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,693 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,693 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,693 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,693 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,693 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,693 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,694 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,694 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,694 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,694 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,694 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,694 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,694 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,695 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,695 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,695 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,695 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,695 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,695 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,695 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,696 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,696 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,696 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,696 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,696 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,696 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,697 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,697 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,697 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,697 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,697 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,697 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,698 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,698 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,698 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,698 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,698 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,698 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,698 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,699 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,699 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,699 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,699 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,699 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,699 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,699 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,699 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,700 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,700 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,700 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,700 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,700 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,700 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,700 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,701 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,701 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,701 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,701 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,701 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,701 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,702 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,702 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,702 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,702 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,702 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,702 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,702 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,703 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,703 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,703 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,703 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,703 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,703 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,703 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,704 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,704 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,704 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,704 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,704 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,704 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,704 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,705 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,705 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,705 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,705 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,705 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,705 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,705 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,706 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,706 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,706 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,706 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,706 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,706 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,706 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,706 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,707 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,707 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,707 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,707 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,707 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,707 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,707 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,708 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,708 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,708 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,708 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,708 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,708 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,708 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,709 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,709 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,709 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,709 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,709 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,709 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,709 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,709 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,710 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,710 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,710 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,710 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,710 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,710 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,711 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,711 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,711 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,711 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,711 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,711 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,711 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,712 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,712 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,712 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,712 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,712 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,712 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,712 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,713 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,713 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,713 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,713 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,713 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,713 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,713 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,713 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,714 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,714 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,714 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,714 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,714 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,714 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,714 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,715 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,715 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,715 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,715 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,715 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:31:51,715 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:51,734 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:51,754 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:31:52,018 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:31:53,019 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:55,020 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:57,024 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:59,026 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:31:59,178 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:31:59,204 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:31:59,243 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:00,027 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:32:01,028 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:02,501 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:32:02,502 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:32:03,030 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:05,032 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:07,033 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:08,151 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:08,178 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:08,252 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:08,252 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:08,252 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:08,283 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:08,283 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:08,283 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:08,303 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:09,035 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:32:09,036 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:11,037 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:13,039 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:15,040 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:15,060 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:15,119 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:15,120 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:15,121 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:15,121 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:15,141 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:15,141 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:15,141 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:15,161 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:15,540 DEBUG   SenderThread:3954764 [sender.py:send():235] send: stats
+2022-02-19 23:32:16,120 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:32:17,121 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:17,781 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:32:17,782 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:32:19,123 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/config.yaml
+2022-02-19 23:32:19,123 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:21,125 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:23,127 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:25,129 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:27,131 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:29,133 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:31,135 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:33,063 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:32:33,063 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:32:33,137 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:35,070 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:35,138 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:35,160 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:35,160 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:36,161 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:32:37,162 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:39,164 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:41,166 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:43,167 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:43,582 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:43,607 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:43,645 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:44,168 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:32:45,169 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:46,037 DEBUG   SenderThread:3954764 [sender.py:send():235] send: stats
+2022-02-19 23:32:47,171 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:48,401 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:32:48,401 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:32:49,173 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:51,175 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:52,537 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:52,566 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:52,646 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:52,646 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:52,647 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:52,674 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:52,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:52,674 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:52,693 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:53,177 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:32:53,177 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:55,178 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:57,181 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:59,056 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:59,085 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:59,165 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:59,183 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:59,184 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:59,217 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:32:59,218 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:59,218 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:32:59,219 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:59,219 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:59,240 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:32:59,240 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:32:59,240 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:32:59,240 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:32:59,240 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:32:59,240 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:32:59,241 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:32:59,241 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:32:59,261 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:33:00,218 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:33:01,219 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:03,221 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:03,713 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-19 23:33:03,714 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: stop_status
+2022-02-19 23:33:05,223 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:07,225 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:07,636 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: log_artifact
+2022-02-19 23:33:07,636 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: log_artifact
+2022-02-19 23:33:08,225 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/media/table/final_train_grouped_25_0f1130ee6c8c0a6f5010.table.json
+2022-02-19 23:33:08,226 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/media
+2022-02-19 23:33:08,226 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/media/table
+2022-02-19 23:33:09,227 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:09,850 INFO    Thread-15 :3954764 [upload_job.py:push():95] Uploaded file /home/gokul.kumar/.cache/wandb/artifacts/obj/md5/57/3ccc628340a7a74fd257421cd47ff6
+2022-02-19 23:33:11,230 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:11,285 INFO    SenderThread:3954764 [sender.py:send_request_log_artifact():973] logged artifact run-2kpiz8nm-final_train_grouped - {'id': 'QXJ0aWZhY3Q6ODYzNDczNzQ=', 'digest': '75cfddf0c33d48e9cbbbcc2d099c0f1a', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMDYzNTcw', 'latestArtifact': None}, 'version': 'latest'}
+2022-02-19 23:33:11,285 DEBUG   SenderThread:3954764 [sender.py:send():235] send: files
+2022-02-19 23:33:11,285 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file media/table/final_train_grouped_25_0f1130ee6c8c0a6f5010.table.json with policy now
+2022-02-19 23:33:11,286 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,287 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,287 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,287 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,288 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,288 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,288 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,288 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,289 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,289 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:11,289 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:33:11,289 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:33:11,331 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:33:12,231 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:33:12,349 INFO    Thread-16 :3954764 [upload_job.py:push():137] Uploaded file /tmp/tmpcp976l55wandb/1t0yxiv7-media/table/final_train_grouped_25_0f1130ee6c8c0a6f5010.table.json
+2022-02-19 23:33:13,232 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:15,235 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:15,327 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: log_artifact
+2022-02-19 23:33:15,327 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: log_artifact
+2022-02-19 23:33:16,236 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_created():217] file/dir created: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/media/table/final_test_grouped_26_78b76f1ddbf905bc12e9.table.json
+2022-02-19 23:33:16,237 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/media/table
+2022-02-19 23:33:17,213 INFO    Thread-18 :3954764 [upload_job.py:push():95] Uploaded file /home/gokul.kumar/.cache/wandb/artifacts/obj/md5/df/155934f1fa176c4fef4c866f4e8cbc
+2022-02-19 23:33:17,237 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:18,222 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:18,240 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:18,633 INFO    SenderThread:3954764 [sender.py:send_request_log_artifact():973] logged artifact run-2kpiz8nm-final_test_grouped - {'id': 'QXJ0aWZhY3Q6ODYzNDc0Mjc=', 'digest': 'e9d5e82cde2e7e80b4bc7a1b4ca3c118', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMDYzNTkw', 'latestArtifact': None}, 'version': 'latest'}
+2022-02-19 23:33:18,633 DEBUG   SenderThread:3954764 [sender.py:send():235] send: files
+2022-02-19 23:33:18,634 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file media/table/final_test_grouped_26_78b76f1ddbf905bc12e9.table.json with policy now
+2022-02-19 23:33:18,634 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,635 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,636 DEBUG   SenderThread:3954764 [sender.py:send():235] send: metric
+2022-02-19 23:33:18,637 DEBUG   SenderThread:3954764 [sender.py:send():235] send: history
+2022-02-19 23:33:18,637 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:33:18,676 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:33:18,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: stats
+2022-02-19 23:33:18,678 DEBUG   SenderThread:3954764 [sender.py:send():235] send: telemetry
+2022-02-19 23:33:18,679 DEBUG   SenderThread:3954764 [sender.py:send():235] send: exit
+2022-02-19 23:33:18,679 INFO    SenderThread:3954764 [sender.py:send_exit():371] handling exit code: 0
+2022-02-19 23:33:18,679 INFO    SenderThread:3954764 [sender.py:send_exit():373] handling runtime: 152
+2022-02-19 23:33:18,695 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:33:18,695 INFO    SenderThread:3954764 [sender.py:send_exit():379] send defer
+2022-02-19 23:33:18,695 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:18,696 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:18,696 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-19 23:33:18,697 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:18,697 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-19 23:33:18,697 INFO    SenderThread:3954764 [sender.py:transition_state():392] send defer: 1
+2022-02-19 23:33:18,698 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:18,698 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-19 23:33:18,805 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:18,805 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:18,805 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-19 23:33:18,806 INFO    SenderThread:3954764 [sender.py:transition_state():392] send defer: 2
+2022-02-19 23:33:18,806 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:18,807 DEBUG   SenderThread:3954764 [sender.py:send():235] send: stats
+2022-02-19 23:33:18,807 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:18,808 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-19 23:33:18,809 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:18,809 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-19 23:33:18,809 INFO    SenderThread:3954764 [sender.py:transition_state():392] send defer: 3
+2022-02-19 23:33:18,809 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:18,810 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-19 23:33:18,839 DEBUG   SenderThread:3954764 [sender.py:send():235] send: summary
+2022-02-19 23:33:18,875 INFO    SenderThread:3954764 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-19 23:33:18,909 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:19,242 INFO    Thread-8  :3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:33:19,584 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:19,584 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-19 23:33:19,585 INFO    SenderThread:3954764 [sender.py:transition_state():392] send defer: 4
+2022-02-19 23:33:19,585 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:19,586 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:19,586 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-19 23:33:19,586 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:19,587 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-19 23:33:19,587 INFO    SenderThread:3954764 [sender.py:transition_state():392] send defer: 5
+2022-02-19 23:33:19,587 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:19,587 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-19 23:33:19,587 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:19,588 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-19 23:33:19,588 INFO    SenderThread:3954764 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-19 23:33:19,623 INFO    Thread-19 :3954764 [upload_job.py:push():137] Uploaded file /tmp/tmpcp976l55wandb/jiafnkjn-media/table/final_test_grouped_26_78b76f1ddbf905bc12e9.table.json
+2022-02-19 23:33:19,688 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:20,244 INFO    SenderThread:3954764 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/config.yaml
+2022-02-19 23:33:20,245 INFO    SenderThread:3954764 [dir_watcher.py:finish():313] scan: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files
+2022-02-19 23:33:20,245 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/requirements.txt requirements.txt
+2022-02-19 23:33:20,245 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/diff.patch diff.patch
+2022-02-19 23:33:20,246 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/conda-environment.yaml conda-environment.yaml
+2022-02-19 23:33:20,246 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/config.yaml config.yaml
+2022-02-19 23:33:20,253 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json wandb-summary.json
+2022-02-19 23:33:20,253 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log output.log
+2022-02-19 23:33:20,260 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-metadata.json wandb-metadata.json
+2022-02-19 23:33:20,273 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/code/main.py code/main.py
+2022-02-19 23:33:20,275 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/media/table/final_test_grouped_26_78b76f1ddbf905bc12e9.table.json media/table/final_test_grouped_26_78b76f1ddbf905bc12e9.table.json
+2022-02-19 23:33:20,275 INFO    SenderThread:3954764 [dir_watcher.py:finish():327] scan save: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/media/table/final_train_grouped_25_0f1130ee6c8c0a6f5010.table.json media/table/final_train_grouped_25_0f1130ee6c8c0a6f5010.table.json
+2022-02-19 23:33:20,275 INFO    SenderThread:3954764 [sender.py:transition_state():392] send defer: 6
+2022-02-19 23:33:20,276 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:20,276 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:20,277 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-19 23:33:20,277 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:20,277 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-19 23:33:20,278 INFO    SenderThread:3954764 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-19 23:33:20,379 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:20,379 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:20,482 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:20,482 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:20,585 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:20,589 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:20,692 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:20,692 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:20,794 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:20,795 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:20,897 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:20,898 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,000 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,000 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,103 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,103 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,205 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,206 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,271 INFO    Thread-20 :3954764 [upload_job.py:push():137] Uploaded file /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/requirements.txt
+2022-02-19 23:33:21,308 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,308 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,391 INFO    Thread-23 :3954764 [upload_job.py:push():137] Uploaded file /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/output.log
+2022-02-19 23:33:21,411 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,411 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,514 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,514 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,519 INFO    Thread-21 :3954764 [upload_job.py:push():137] Uploaded file /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/config.yaml
+2022-02-19 23:33:21,617 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,618 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,721 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,721 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,824 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,824 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:21,829 INFO    Thread-22 :3954764 [upload_job.py:push():137] Uploaded file /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/files/wandb-summary.json
+2022-02-19 23:33:21,927 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:21,927 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:22,029 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:22,030 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:22,030 INFO    Thread-7  :3954764 [sender.py:transition_state():392] send defer: 7
+2022-02-19 23:33:22,031 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:22,031 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-19 23:33:22,032 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:22,032 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-19 23:33:22,132 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:23,769 INFO    SenderThread:3954764 [sender.py:transition_state():392] send defer: 8
+2022-02-19 23:33:23,770 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:23,771 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:23,771 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-19 23:33:23,771 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:23,772 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-19 23:33:23,772 INFO    SenderThread:3954764 [sender.py:transition_state():392] send defer: 9
+2022-02-19 23:33:23,773 DEBUG   SenderThread:3954764 [sender.py:send():235] send: final
+2022-02-19 23:33:23,773 DEBUG   SenderThread:3954764 [sender.py:send():235] send: footer
+2022-02-19 23:33:23,774 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: defer
+2022-02-19 23:33:23,774 INFO    HandlerThread:3954764 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-19 23:33:23,774 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: defer
+2022-02-19 23:33:23,775 INFO    SenderThread:3954764 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-19 23:33:23,873 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-19 23:33:23,874 DEBUG   SenderThread:3954764 [sender.py:send_request():249] send_request: poll_exit
+2022-02-19 23:33:23,874 INFO    SenderThread:3954764 [file_pusher.py:join():182] waiting for file pusher
+2022-02-19 23:33:24,145 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-19 23:33:24,198 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-19 23:33:24,201 DEBUG   HandlerThread:3954764 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-19 23:33:24,201 INFO    HandlerThread:3954764 [handler.py:finish():739] shutting down handler
+2022-02-19 23:33:24,773 INFO    WriterThread:3954764 [datastore.py:close():281] close: /home/gokul.kumar/Desktop/multilingual-qa/wandb/run-20220219_233044-2kpiz8nm/run-2kpiz8nm.wandb
+2022-02-19 23:33:25,143 INFO    SenderThread:3954764 [sender.py:finish():1075] shutting down sender
+2022-02-19 23:33:25,143 INFO    SenderThread:3954764 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-19 23:33:25,144 INFO    SenderThread:3954764 [file_pusher.py:join():182] waiting for file pusher
+2022-02-19 23:33:25,147 INFO    MainThread:3954764 [internal.py:handle_exit():79] Internal process exited
