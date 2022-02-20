@@ -242,6 +242,8 @@ def load_dataset(args, split, mode, tokenizer):
             data_path =  'data/chaii-trans/train_translated_train.csv'
         elif split == 'test':
             data_path =  'data/chaii/train_test.csv'
+        elif split == 'val':
+            data_path =  'data/chaii/train_val.csv'
 
         if mode == 'train':
             map_fn = prepare_train_features
@@ -252,7 +254,11 @@ def load_dataset(args, split, mode, tokenizer):
 
         df = pd.read_csv(data_path)
         df['language'] = df['language'].apply(reformat_lang_chaii)
-        df = df[df['language'].isin(langs)]#.sample(20)
+        if split == 'train' and args.min_langs > 1:
+            id_counts = df.id.value_counts()
+            ids_filtered = id_counts[id_counts>=args.min_langs].index
+            df = df[df['id'].isin(ids_filtered)]
+        df = df[df['language'].isin(langs)]
         df['answers'] = df[['answer_start', 'answer_text']].apply(convert_answers, axis=1)
         hf_dataset = Dataset.from_pandas(df)
         hf_dataset_tokenized = hf_dataset.map(map_fn, fn_kwargs={'args':args, 'tokenizer': tokenizer},

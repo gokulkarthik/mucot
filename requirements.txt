@@ -1,6 +1,7 @@
 datasets
 numpy
 pandas
+sentencepiece
 scikit-learn
 torch
 transformers

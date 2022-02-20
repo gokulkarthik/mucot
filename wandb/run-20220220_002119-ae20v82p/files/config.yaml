@@ -2459,6 +2459,106 @@ _wandb:
       5: 1
       6:
       - 1
+    - 1: train/train_runtime
+      5: 1
+      6:
+      - 1
+    - 1: train/train_samples_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/train_steps_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/total_flos
+      5: 1
+      6:
+      - 1
+    - 1: train/train_loss
+      5: 1
+      6:
+      - 1
+    - 1: final_train_jaccard_score
+      5: 1
+      6:
+      - 1
+    - 1: final_train_f1_score
+      5: 1
+      6:
+      - 1
+    - 1: final_train_grouped._type
+      5: 1
+      6:
+      - 1
+    - 1: final_train_grouped.path
+      5: 1
+      6:
+      - 1
+    - 1: final_train_grouped.sha256
+      5: 1
+      6:
+      - 1
+    - 1: final_train_grouped.size
+      5: 1
+      6:
+      - 1
+    - 1: final_train_grouped.artifact_path
+      5: 1
+      6:
+      - 1
+    - 1: final_train_grouped._latest_artifact_path
+      5: 1
+      6:
+      - 1
+    - 1: final_train_grouped.ncols
+      5: 1
+      6:
+      - 1
+    - 1: final_train_grouped.nrows
+      5: 1
+      6:
+      - 1
+    - 1: final_test_jaccard_score
+      5: 1
+      6:
+      - 1
+    - 1: final_test_f1_score
+      5: 1
+      6:
+      - 1
+    - 1: final_test_grouped._type
+      5: 1
+      6:
+      - 1
+    - 1: final_test_grouped.path
+      5: 1
+      6:
+      - 1
+    - 1: final_test_grouped.sha256
+      5: 1
+      6:
+      - 1
+    - 1: final_test_grouped.size
+      5: 1
+      6:
+      - 1
+    - 1: final_test_grouped.artifact_path
+      5: 1
+      6:
+      - 1
+    - 1: final_test_grouped._latest_artifact_path
+      5: 1
+      6:
+      - 1
+    - 1: final_test_grouped.ncols
+      5: 1
+      6:
+      - 1
+    - 1: final_test_grouped.nrows
+      5: 1
+      6:
+      - 1
     python_version: 3.9.7
     start_time: 1645302079
     t:
@@ -2466,6 +2566,13 @@ _wandb:
       - 1
       - 5
       - 11
+      2:
+      - 1
+      - 5
+      - 11
+      3:
+      - 1
+      - 7
       4: 3.9.7
       5: 0.12.10
       6: 4.16.2

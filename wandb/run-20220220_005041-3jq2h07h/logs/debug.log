@@ -25,3 +25,266 @@ config: {}
 2022-02-20 00:50:43,401 INFO    MainThread:1724897 [wandb_run.py:_config_callback():966] config_cb None None {'dataset': 'chaii', 'langs': ['hi', 'ta', 'bn^', 'mr^', 'ml^', 'te^'], 'max_length': 384, 'doc_stride': 128, 'model_ckpt': 'bert-base-multilingual-cased', 'num_epochs': 3, 'batch_size': 4, 'lr': 3e-06, 'warmup_ratio': 0.1, 'gradient_accumulation_steps': 8, 'weight_decay': 0.01, 'eval': False}
 2022-02-20 00:50:50,489 INFO    MainThread:1724897 [wandb_run.py:_config_callback():966] config_cb None None {'return_dict': True, 'output_hidden_states': False, 'output_attentions': False, 'torchscript': False, 'torch_dtype': None, 'use_bfloat16': False, 'pruned_heads': {}, 'tie_word_embeddings': True, 'is_encoder_decoder': False, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'max_length': 20, 'min_length': 0, 'do_sample': False, 'early_stopping': False, 'num_beams': 1, 'num_beam_groups': 1, 'diversity_penalty': 0.0, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 1.0, 'no_repeat_ngram_size': 0, 'encoder_no_repeat_ngram_size': 0, 'bad_words_ids': None, 'num_return_sequences': 1, 'chunk_size_feed_forward': 0, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'remove_invalid_values': False, 'architectures': ['BertForMaskedLM'], 'finetuning_task': None, 'id2label': {0: 'LABEL_0', 1: 'LABEL_1'}, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1}, 'tokenizer_class': None, 'prefix': None, 'bos_token_id': None, 'pad_token_id': 0, 'eos_token_id': None, 'sep_token_id': None, 'decoder_start_token_id': None, 'task_specific_params': None, 'problem_type': None, '_name_or_path': 'bert-base-multilingual-cased', 'transformers_version': '4.16.2', 'directionality': 'bidi', 'model_type': 'bert', 'pooler_fc_size': 768, 'pooler_num_attention_heads': 12, 'pooler_num_fc_layers': 3, 'pooler_size_per_head': 128, 'pooler_type': 'first_token_transform', 'vocab_size': 119547, 'hidden_size': 768, 'num_hidden_layers': 12, 'num_attention_heads': 12, 'hidden_act': 'gelu', 'intermediate_size': 3072, 'hidden_dropout_prob': 0.1, 'attention_probs_dropout_prob': 0.1, 'max_position_embeddings': 512, 'type_vocab_size': 2, 'initializer_range': 0.02, 'layer_norm_eps': 1e-12, 'position_embedding_type': 'absolute', 'use_cache': True, 'classifier_dropout': None, 'output_dir': 'ckpts/glad-durian-39', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': True, 'do_predict': False, 'evaluation_strategy': 'steps', 'prediction_loss_only': False, 'per_device_train_batch_size': 4, 'per_device_eval_batch_size': 4, 'per_gpu_train_batch_size': 'None', 'per_gpu_eval_batch_size': 'None', 'gradient_accumulation_steps': 8, 'eval_accumulation_steps': 'None', 'learning_rate': 3e-06, 'weight_decay': 0.01, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 3, 'max_steps': -1, 'lr_scheduler_type': 'linear', 'warmup_ratio': 0.1, 'warmup_steps': 0, 'log_level': -1, 'log_level_replica': -1, 'log_on_each_node': True, 'logging_dir': 'ckpts/glad-durian-39/runs/Feb20_00-50-43_ws-l6-013', 'logging_strategy': 'steps', 'logging_first_step': False, 'logging_steps': 100, 'logging_nan_inf_filter': True, 'save_strategy': 'steps', 'save_steps': 500, 'save_total_limit': 2, 'save_on_each_node': False, 'no_cuda': False, 'seed': 0, 'bf16': False, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': 'None', 'local_rank': -1, 'xpu_backend': 'None', 'tpu_num_cores': 'None', 'tpu_metrics_debug': False, 'debug': '[]', 'dataloader_drop_last': False, 'eval_steps': 100, 'dataloader_num_workers': 0, 'past_index': -1, 'run_name': 'mlqa', 'disable_tqdm': False, 'remove_unused_columns': True, 'label_names': 'None', 'load_best_model_at_end': True, 'metric_for_best_model': 'loss', 'greater_is_better': False, 'ignore_data_skip': False, 'sharded_ddp': '[]', 'deepspeed': 'None', 'label_smoothing_factor': 0.0, 'optim': 'adamw_hf', 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': "['wandb']", 'ddp_find_unused_parameters': 'None', 'ddp_bucket_cap_mb': 'None', 'dataloader_pin_memory': True, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': 'None', 'hub_model_id': 'None', 'hub_strategy': 'every_save', 'hub_token': '<HUB_TOKEN>', 'gradient_checkpointing': False, 'fp16_backend': 'auto', 'push_to_hub_model_id': 'None', 'push_to_hub_organization': 'None', 'push_to_hub_token': '<PUSH_TO_HUB_TOKEN>', '_n_gpu': 1, 'mp_parameters': '', 'train_batch_size': 4, 'eval_batch_size': 4}
 2022-02-20 00:50:50,490 INFO    MainThread:1724897 [wandb_watch.py:watch():43] Watching
+2022-02-20 03:10:00,827 INFO    MainThread:1724897 [wandb_run.py:_atexit_cleanup():1797] got exitcode: 0
+2022-02-20 03:10:00,828 INFO    MainThread:1724897 [wandb_run.py:_restore():1769] restore
+2022-02-20 03:10:04,183 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 2
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 8200
+  total_bytes: 8362
+}
+
+2022-02-20 03:10:04,328 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 2
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 8200
+  total_bytes: 8362
+}
+
+2022-02-20 03:10:05,083 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 2
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 8362
+  total_bytes: 8362
+}
+
+2022-02-20 03:10:05,388 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 8362
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:05,489 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 8362
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:05,590 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 8362
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:05,692 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 8362
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:05,794 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 8362
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:05,895 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 608617
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:05,996 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1017983
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,097 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,199 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,301 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,403 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,506 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,608 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,710 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,813 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:06,914 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:07,015 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:07,117 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:09,746 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+
+2022-02-20 03:10:10,104 INFO    MainThread:1724897 [wandb_run.py:_wait_for_finish():1929] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  media_count: 2
+  artifact_count: 2
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1155786
+  total_bytes: 1155786
+}
+local_info {
+}
+
+2022-02-20 03:10:11,172 INFO    MainThread:1724897 [wandb_run.py:_append_history():2144] rendering history
+2022-02-20 03:10:11,173 INFO    MainThread:1724897 [wandb_run.py:_append_summary():2102] rendering summary
+2022-02-20 03:10:11,173 INFO    MainThread:1724897 [wandb_run.py:_append_files():2194] logging synced files
