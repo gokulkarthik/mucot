@@ -82,7 +82,11 @@ def main(args):
 
     wandb.init(project='mlqa', mode='online')
     wandb.config.update(args)
-    wandb.config.update({'num_params': sum(p.numel() for p in  model.parameters())})
+    wandb.config.update({
+        'num_params': sum(p.numel() for p in  model.parameters()),
+        'num_train_examples': len(dataset_train),
+        'num_train_features': len(dataset_train_tokenized)
+        })
     run_name = wandb.run.name
 
     training_args = TrainingArguments(
