@@ -1,12 +1,15 @@
 python main.py --dataset chaii \
---langs hi ta bn^ mr^ ml^ te^ \
+--langs hi ta ml^ te^ \
 --min_langs 1 \
+--wt_contrastive_loss 0.05 \
+--contrastive_loss_layers 3 \
 --max_steps 5000 \
 --logging_steps 100 \
 --eval_steps 100 \
 --save_steps 100 \
---train_batch_size 4 \
---gradient_accumulation_steps 8 \
---eval_batch_size 4 \
+--train_batch_size 16 \
+--gradient_accumulation_steps 1 \
+--eval_batch_size 16 \
 --model_name mbert-squad \
---eval False
+--eval False \
+--debug False

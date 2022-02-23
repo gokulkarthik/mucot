@@ -7,7 +7,7 @@ import wandb
 from transformers import EarlyStoppingCallback, default_data_collator
 from transformers import TrainingArguments, Trainer
 
-from datasets_local import load_dataset, postprocess_qa_predictions
+from datasets_local import load_dataset, postprocess_qa_predictions, add_pair_idx_column
 from engine import CustomTrainer, EvaluationCallback, create_tokenizer, create_model, evaluate_model
 from utils.metrics import compute_f1_score, computer_jaccard_score
 
@@ -48,6 +48,8 @@ def get_arg_parser():
     parser.add_argument('--model_ckpt', type=str, default="", help='Local path or huggingface url', required=False)
 
     # training parameters
+    parser.add_argument('--wt_contrastive_loss', type=float, default=0.0)
+    parser.add_argument('--contrastive_loss_layers', nargs='+')
     parser.add_argument('--num_epochs', type=int, default=10)
     parser.add_argument('--max_steps', type=int, default=5000)
     parser.add_argument('--logging_steps', type=int, default=500)
@@ -62,10 +64,10 @@ def get_arg_parser():
 
     # other parameters
     parser.add_argument('--eval', type=str2bool, default=False, help='Perform evaluation only')
-
+    parser.add_argument('--debug', type=str2bool, default=False, help='Set to debug mode')
+    parser.add_argument('--max_rows', type=int, default=-1, help='Used only in debug mode')
 
     return parser
-
 
 def main(args):
 
@@ -74,13 +76,18 @@ def main(args):
     dataset_val, dataset_val_tokenized = load_dataset(args=args, split='val', mode='train', tokenizer=tokenizer)
     model = create_model(args)
 
+    # for contrastive training
+    dataset_train_tokenized = add_pair_idx_column(dataset_train, dataset_train_tokenized)
+
     # for evaluation callback
-    dataset_train_4eval, dataset_train_tokenized_4eval = load_dataset(args=args, split='train', mode='eval', tokenizer=tokenizer)
+    #dataset_train_4eval, dataset_train_tokenized_4eval = load_dataset(args=args, split='train', mode='eval', tokenizer=tokenizer)
     dataset_val_4eval, dataset_val_tokenized_4eval = load_dataset(args=args, split='val', mode='eval', tokenizer=tokenizer)
     dataset_test_4eval, dataset_test_tokenized_4eval = load_dataset(args=args, split='test', mode='eval', tokenizer=tokenizer)
     
-
-    wandb.init(project='mlqa', mode='online')
+    if args.debug:
+        wandb.init(project='mlqa', mode='disabled')
+    else:
+        wandb.init(project='mlqa', mode='online')
     wandb.config.update(args)
     wandb.config.update({
         'num_params': sum(p.numel() for p in  model.parameters()),
@@ -124,7 +131,9 @@ def main(args):
 #            EvaluationCallback(dataset=dataset_train_4eval, dataset_tokenized=dataset_train_tokenized_4eval, prefix='train'),
             EvaluationCallback(dataset=dataset_val_4eval, dataset_tokenized=dataset_val_tokenized_4eval, prefix='val'),
             EvaluationCallback(dataset=dataset_test_4eval, dataset_tokenized=dataset_test_tokenized_4eval, prefix='test')
-        ]
+        ],
+        wt_contrastive_loss = args.wt_contrastive_loss,
+        contrastive_loss_layers = [int(x) for x in args.contrastive_loss_layers]
     )
         
     if not args.eval:
@@ -134,7 +143,7 @@ def main(args):
     # Final Evaluation 
     # wandb.summary.final - [train, val, test] split metrics based on [overall eval loss] on [val] split
     wandb.summary['final/step'] = int(trainer.state.best_model_checkpoint.rsplit('-', 1)[-1])
-    evaluate_model(model, tokenizer, dataset_train_4eval, dataset_train_tokenized_4eval, prefix='train', run_name=run_name)
+    #evaluate_model(model, tokenizer, dataset_train_4eval, dataset_train_tokenized_4eval, prefix='train', run_name=run_name)
     evaluate_model(model, tokenizer, dataset_val_4eval, dataset_val_tokenized_4eval, prefix='val', run_name=run_name)
     evaluate_model(model, tokenizer, dataset_test_4eval, dataset_test_tokenized_4eval, prefix='test', run_name=run_name)
 
@@ -157,6 +166,12 @@ if __name__ == '__main__':
 
     parser = get_arg_parser()
     args = parser.parse_args()
+    if args.debug:
+        args.max_steps = 50
+        args.logging_steps = 10
+        args.eval_steps = 10
+        args.save_steps = 10
+        args.max_rows = 100
     
     model_name_to_ckpt = {
         'mbert': 'bert-base-multilingual-cased',

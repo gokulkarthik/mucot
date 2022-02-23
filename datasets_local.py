@@ -47,7 +47,8 @@ def prepare_train_features(examples, args, tokenizer):
 
     # Since one example might give us several features if it has a long context, we need a map from a feature to
     # its corresponding example. This key gives us just that.
-    sample_mapping = tokenized_examples.pop("overflow_to_sample_mapping")
+    sample_mapping = tokenized_examples.get("overflow_to_sample_mapping")
+
     # The offset mappings will give us a map from token to character position in the original context. This will
     # help us compute the start_positions and end_positions.
     offset_mapping = tokenized_examples.pop("offset_mapping")
@@ -236,6 +237,8 @@ def postprocess_qa_predictions(examples, features, raw_predictions, tokenizer, n
     return predictions
 
 def load_dataset(args, split, mode, tokenizer):
+
+    print(f'Loading {split} data for {mode}...')
     
     if args.dataset == 'chaii':
         if split == 'train':
@@ -254,18 +257,74 @@ def load_dataset(args, split, mode, tokenizer):
 
         df = pd.read_csv(data_path)
         df['language'] = df['language'].apply(reformat_lang_chaii)
-        if split == 'train' and args.min_langs > 1:
+        df = df[df['language'].isin(langs)]
+        if split == 'train' and mode == 'train' and args.min_langs > 1:
             id_counts = df.id.value_counts()
             ids_filtered = id_counts[id_counts>=args.min_langs].index
             df = df[df['id'].isin(ids_filtered)]
-        df = df[df['language'].isin(langs)]
+        df = df.reset_index(drop=True)
+        # if args.debug:
+        #     df = df.sample(frac=1).head(args.max_rows)
         df['answers'] = df[['answer_start', 'answer_text']].apply(convert_answers, axis=1)
         hf_dataset = Dataset.from_pandas(df)
+
         hf_dataset_tokenized = hf_dataset.map(map_fn, fn_kwargs={'args':args, 'tokenizer': tokenizer},
-         batched=True, remove_columns=hf_dataset.column_names)
+         batched=True, batch_size=len(hf_dataset), remove_columns=hf_dataset.column_names)
+
         print(f'Length: {len(hf_dataset)} -> {len(hf_dataset_tokenized)}')
 
+        print(f'Data loading is COMPLETED')
+        print('-'*50)
         return hf_dataset, hf_dataset_tokenized
 
     else:
         raise NotImplementedError()
+
+def add_pair_idx_column(dataset_train, dataset_train_tokenized):
+
+    print('Pair matching is STARTED...')
+
+    ### start: adding colunns to match pairs for contrastive training
+    dataset_train_tokenized = dataset_train_tokenized.add_column('feature_idx', range(len(dataset_train_tokenized)))
+    
+    dataset_train_tokenized = dataset_train_tokenized.add_column('example_idx', 
+        dataset_train_tokenized['overflow_to_sample_mapping']) 
+    
+    example_to_source = {k:v for k, v in enumerate(dataset_train['id'])} # 0->ghdaghsd, 1->jdgauhdu ... 101->ghdaghsd
+    dataset_train_tokenized = dataset_train_tokenized.add_column('source_idx', 
+        [example_to_source[x] for x in dataset_train_tokenized['example_idx']])
+
+    dataset_train_df = dataset_train.to_pandas()[['id', 'is_original']]
+    dataset_train_df = dataset_train_df[dataset_train_df['is_original']==True]
+    source_idx_to_source_example_idx= {v:k for k, v in dataset_train_df['id'].items()}
+    dataset_train_tokenized = dataset_train_tokenized.add_column('source_example_idx', 
+        [source_idx_to_source_example_idx[x] for x in dataset_train_tokenized['source_idx']])
+    
+    prev = dataset_train_tokenized['example_idx'][0]
+    local_feature_idx  = 0
+    local_feature_idxs = [local_feature_idx]
+    for i, curr in enumerate(dataset_train_tokenized['example_idx'][1:], start=1):
+        if curr == prev:
+            local_feature_idx += 1
+        else:
+            local_feature_idx = 0
+        local_feature_idxs.append(local_feature_idx)
+        prev = curr
+    dataset_train_tokenized = dataset_train_tokenized.add_column('local_feature_idx', local_feature_idxs)
+
+    print("#features; #examples; #sources")
+    print(len(set(dataset_train_tokenized['feature_idx'])), len(set(dataset_train_tokenized['example_idx'])), len(set(dataset_train_tokenized['source_idx'])))
+    
+    cols = [col for col in dataset_train_tokenized.column_names if col.endswith('_idx')]
+    df = dataset_train_tokenized.to_pandas()[cols]
+    res = df.groupby(['source_example_idx', 'local_feature_idx'])['feature_idx'].agg(list)
+    get_pair_idx = lambda row: res[row['source_example_idx'], row['local_feature_idx']]
+    df['pair_idx'] = df.apply(get_pair_idx, axis=1)
+
+    dataset_train_tokenized = dataset_train_tokenized.add_column('pair_idx', df['pair_idx'].values.tolist())
+
+    print('Pair matching is DONE.')
+    print('-'*50)
+    # end: adding colunns to match pairs for contrastive training
+
+    return dataset_train_tokenized
