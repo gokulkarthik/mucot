@@ -40,6 +40,7 @@ def get_arg_parser():
     parser.add_argument('--dataset', default='chaii', choices=['chaii'])
     parser.add_argument('--langs', choices=['hi', 'ta', 'en^', 'bn^', 'hi^', 'mr^', 'ml^', 'ta^', 'te^'], nargs='+')
     parser.add_argument('--min_langs', type=int, default=1)
+    parser.add_argument('--langs_for_min_langs_filter', choices=['hi', 'ta', 'en^', 'bn^', 'hi^', 'mr^', 'ml^', 'ta^', 'te^'], nargs='+')
     parser.add_argument('--max_length', type=int, default=384)
     parser.add_argument('--doc_stride', type=int, default=128)
 
@@ -50,6 +51,7 @@ def get_arg_parser():
     # training parameters
     parser.add_argument('--wt_contrastive_loss', type=float, default=0.0)
     parser.add_argument('--contrastive_loss_layers', nargs='+')
+    parser.add_argument('--agg_for_contrastive', type=str, default="mean", choices=['mean', 'max', 'concat'], required=False)
     parser.add_argument('--num_epochs', type=int, default=10)
     parser.add_argument('--max_steps', type=int, default=5000)
     parser.add_argument('--logging_steps', type=int, default=500)
@@ -133,7 +135,8 @@ def main(args):
             EvaluationCallback(dataset=dataset_test_4eval, dataset_tokenized=dataset_test_tokenized_4eval, prefix='test')
         ],
         wt_contrastive_loss = args.wt_contrastive_loss,
-        contrastive_loss_layers = [int(x) for x in args.contrastive_loss_layers]
+        contrastive_loss_layers = [int(x) for x in args.contrastive_loss_layers],
+        agg_for_contrastive = args.agg_for_contrastive
     )
         
     if not args.eval:

@@ -257,11 +257,14 @@ def load_dataset(args, split, mode, tokenizer):
 
         df = pd.read_csv(data_path)
         df['language'] = df['language'].apply(reformat_lang_chaii)
-        df = df[df['language'].isin(langs)]
+        # fitering only essential languages
+        df = df[df['language'].isin(['hi', 'ta', 'bn^', 'mr^', 'ml^', 'te^'])]
         if split == 'train' and mode == 'train' and args.min_langs > 1:
+            df = df[df['language'].isin(args.langs_for_min_langs_filter)]
             id_counts = df.id.value_counts()
             ids_filtered = id_counts[id_counts>=args.min_langs].index
             df = df[df['id'].isin(ids_filtered)]
+        df = df[df['language'].isin(langs)]
         df = df.reset_index(drop=True)
         # if args.debug:
         #     df = df.sample(frac=1).head(args.max_rows)

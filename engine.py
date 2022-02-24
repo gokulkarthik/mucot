@@ -31,8 +31,10 @@ class CustomTrainer(Trainer):
     def __init__(self, model, training_args, **kwargs):
         self.wt_contrastive_loss = kwargs.pop('wt_contrastive_loss')
         self.contrastive_loss_layers = kwargs.pop('contrastive_loss_layers')
+        self.agg_for_contrastive = kwargs.pop('agg_for_contrastive')
         self.cross_entropy_loss = torch.nn.CrossEntropyLoss()
         super(CustomTrainer, self).__init__(model, training_args, **kwargs)
+        self.model.logit_scale = nn.Parameter(torch.ones([], device=self.model.device) * np.log(1 / 0.07))
 
     def training_step(self, model: nn.Module, inputs: Dict[str, Union[torch.Tensor, Any]]) -> torch.Tensor:
         """
@@ -109,10 +111,7 @@ class CustomTrainer(Trainer):
             loss = outputs["loss"] if isinstance(outputs, dict) else outputs[0]
 
         if self.wt_contrastive_loss > 0 and is_training: # to avoid running during evaluation
-            layer_idx = 1
-            agg_method = 'mean' # ['mean', 'concat']
             normalize_embedding = True
-            temperature = 1
             contrastive_loss_method = 'clip' # ['clip']
 
             # formatting inputs of the pairs
@@ -133,10 +132,13 @@ class CustomTrainer(Trainer):
                 # embed_a = outputs["hidden_states"][layer_idx]  # [bs, seq_len, embed_size]
                 # embed_b = outputs["hidden_states"][layer_idx]  # [bs, seq_len, embed_size]
                 # outputs["hidden_states"] = [torch.rand(outputs["start_logits"].shape[0], 384, 768, device=loss.device)]*13
-                if agg_method == 'mean':
+                if self.agg_for_contrastive == 'mean':
                     embed_a = torch.mean(outputs["hidden_states"][layer_idx], dim=1) # [bs, embed_size]
                     embed_b = torch.mean(outputs_pair["hidden_states"][layer_idx], dim=1) # [bs, embed_size]
-                elif agg_method == 'concat':
+                elif self.agg_for_contrastive == 'max':
+                    embed_a, _ = torch.max(outputs["hidden_states"][layer_idx], dim=1) # [bs, embed_size]
+                    embed_b, _ = torch.max(outputs_pair["hidden_states"][layer_idx], dim=1) # [bs, embed_size]
+                elif self.agg_for_contrastive == 'concat':
                     embed_size = embed_a.shape[2] 
                     embed_a = outputs["hidden_states"][layer_idx].view(-1, embed_size) # [bs*seq_len, embed_size]
                     embed_b = outputs_pair["hidden_states"][layer_idx].view(-1, embed_size) # [bs*seq_len, embed_size]
@@ -147,7 +149,8 @@ class CustomTrainer(Trainer):
                     embed_a = F.normalize(embed_a, p=2, dim=1)
                     embed_b = F.normalize(embed_b, p=2, dim=1)
 
-                logits = torch.mm(embed_a, embed_b.t()) * temperature
+                logit_scale = self.model.logit_scale.exp()
+                logits = torch.mm(embed_a, embed_b.t()) * logit_scale
 
                 if contrastive_loss_method == 'clip':
                     labels = torch.arange(logits.shape[0], device=logits.device)
@@ -160,7 +163,8 @@ class CustomTrainer(Trainer):
                 contrastive_loss_overall += layer_contrastive_loss
             
             contrastive_loss = contrastive_loss_overall / len(self.contrastive_loss_layers)
-            wandb.log({'contrastive_loss': contrastive_loss}, commit=False)
+            wandb.log({'train/qa_loss': loss}, commit=False)
+            wandb.log({'train/contrastive_loss': contrastive_loss}, commit=False)
 
             loss = loss + self.wt_contrastive_loss * contrastive_loss
 
