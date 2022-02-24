@@ -253,18 +253,29 @@ def load_dataset(args, split, mode, tokenizer):
             langs = args.langs
         elif mode == 'eval':
             map_fn = prepare_test_features
-            langs = ['hi', 'ta']
+            langs = [lang for lang in args.langs if not lang.endswith('^')]
 
         df = pd.read_csv(data_path)
         df['language'] = df['language'].apply(reformat_lang_chaii)
-        # fitering only essential languages
+
+        # fitering only essential languages; other languages are not considered for experimentatiton
         df = df[df['language'].isin(['hi', 'ta', 'bn^', 'mr^', 'ml^', 'te^'])]
+
+        # filtering based on min translations
         if split == 'train' and mode == 'train' and args.min_langs > 1:
             df = df[df['language'].isin(args.langs_for_min_langs_filter)]
             id_counts = df.id.value_counts()
             ids_filtered = id_counts[id_counts>=args.min_langs].index
             df = df[df['id'].isin(ids_filtered)]
+
+        # filtering only input languages and input translated languages
         df = df[df['language'].isin(langs)]
+
+        # the above df may have translations that are translated from non-input language sources. So, to remove them:
+        if split == 'train' and mode == 'train':
+            ids_filtered = df[df['is_original']==True]['id']
+            df = df[df['id'].isin(ids_filtered)]
+
         df = df.reset_index(drop=True)
         # if args.debug:
         #     df = df.sample(frac=1).head(args.max_rows)

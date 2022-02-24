@@ -32,6 +32,7 @@ class CustomTrainer(Trainer):
         self.wt_contrastive_loss = kwargs.pop('wt_contrastive_loss')
         self.contrastive_loss_layers = kwargs.pop('contrastive_loss_layers')
         self.agg_for_contrastive = kwargs.pop('agg_for_contrastive')
+        self.max_steps_for_contrastive = kwargs.pop('max_steps_for_contrastive')
         self.cross_entropy_loss = torch.nn.CrossEntropyLoss()
         super(CustomTrainer, self).__init__(model, training_args, **kwargs)
         self.model.logit_scale = nn.Parameter(torch.ones([], device=self.model.device) * np.log(1 / 0.07))
@@ -166,7 +167,8 @@ class CustomTrainer(Trainer):
             wandb.log({'train/qa_loss': loss}, commit=False)
             wandb.log({'train/contrastive_loss': contrastive_loss}, commit=False)
 
-            loss = loss + self.wt_contrastive_loss * contrastive_loss
+            if self.state.global_step < self.max_steps_for_contrastive:
+                loss = loss + self.wt_contrastive_loss * contrastive_loss
 
         return (loss, outputs) if return_outputs else loss
 
