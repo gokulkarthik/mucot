@@ -32,10 +32,12 @@ class CustomTrainer(Trainer):
         self.wt_contrastive_loss = kwargs.pop('wt_contrastive_loss')
         self.contrastive_loss_layers = kwargs.pop('contrastive_loss_layers')
         self.agg_for_contrastive = kwargs.pop('agg_for_contrastive')
+        self.temperature_for_contrastive = kwargs.pop('temperature_for_contrastive')
         self.max_steps_for_contrastive = kwargs.pop('max_steps_for_contrastive')
         self.cross_entropy_loss = torch.nn.CrossEntropyLoss()
         super(CustomTrainer, self).__init__(model, training_args, **kwargs)
-        self.model.logit_scale = nn.Parameter(torch.ones([], device=self.model.device) * np.log(1 / 0.07))
+        if self.temperature_for_contrastive < 0:
+            self.model.logit_scale = nn.Parameter(torch.ones([], device=self.model.device) * np.log(1 / 0.07))
 
     def training_step(self, model: nn.Module, inputs: Dict[str, Union[torch.Tensor, Any]]) -> torch.Tensor:
         """
@@ -150,8 +152,11 @@ class CustomTrainer(Trainer):
                     embed_a = F.normalize(embed_a, p=2, dim=1)
                     embed_b = F.normalize(embed_b, p=2, dim=1)
 
-                logit_scale = self.model.logit_scale.exp()
-                logits = torch.mm(embed_a, embed_b.t()) * logit_scale
+                if self.temperature_for_contrastive < 0:
+                    logit_scale = self.model.logit_scale.exp()
+                    logits = torch.mm(embed_a, embed_b.t()) * logit_scale
+                else:
+                    logits = torch.mm(embed_a, embed_b.t()) * self.temperature_for_contrastive
 
                 if contrastive_loss_method == 'clip':
                     labels = torch.arange(logits.shape[0], device=logits.device)

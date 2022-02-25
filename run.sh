@@ -1,18 +1,19 @@
 python main.py --dataset chaii \
---langs ta ml^ te^ \
+--langs hi ta bn^ mr^ \
 --min_langs 1 \
 --langs_for_min_langs_filter hi ta bn^ mr^ ml^ te^ \
---wt_contrastive_loss 0.5 \
---contrastive_loss_layers 1 \
+--wt_contrastive_loss 0.05 \
+--contrastive_loss_layers 3 \
 --agg_for_contrastive mean \
---max_steps_for_contrastive 2000 \
+--temperature_for_contrastive 1 \
+--max_steps_for_contrastive 5000 \
 --max_steps 5000 \
 --logging_steps 100 \
 --eval_steps 100 \
 --save_steps 100 \
---train_batch_size 8 \
---gradient_accumulation_steps 8 \
---eval_batch_size 8 \
---model_name xlmroberta-squad \
+--train_batch_size 16 \
+--gradient_accumulation_steps 1 \
+--eval_batch_size 16 \
+--model_name mbert-squad \
 --eval False \
 --debug False

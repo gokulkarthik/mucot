@@ -52,6 +52,7 @@ def get_arg_parser():
     parser.add_argument('--wt_contrastive_loss', type=float, default=0.0)
     parser.add_argument('--contrastive_loss_layers', nargs='+')
     parser.add_argument('--agg_for_contrastive', type=str, default="mean", choices=['mean', 'max', 'concat'], required=False)
+    parser.add_argument('--temperature_for_contrastive', type=float, default=1.0, help='set negative value for learnable temperature')
     parser.add_argument('--max_steps_for_contrastive', type=int, default=5000)
     parser.add_argument('--num_epochs', type=int, default=10)
     parser.add_argument('--max_steps', type=int, default=5000)
@@ -138,6 +139,7 @@ def main(args):
         wt_contrastive_loss = args.wt_contrastive_loss,
         contrastive_loss_layers = [int(x) for x in args.contrastive_loss_layers],
         agg_for_contrastive = args.agg_for_contrastive,
+        temperature_for_contrastive = args.temperature_for_contrastive,
         max_steps_for_contrastive = args.max_steps_for_contrastive
     )
         
