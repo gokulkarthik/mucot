@@ -7,7 +7,7 @@
 * Chaii Original - [Kaggle Link](https://www.kaggle.com/c/chaii-hindi-and-tamil-question-answering/data)
 * Chaii Translated & Transliterated - [Kaggle Link](https://www.kaggle.com/gokulkarthik/chaiitrans)
 
-> Run [utils/split_chaii_dataset.py](./utils/split_chaii_dataset.py) to make the train-test split.
+> Run [data/chaii_split.py](./data/chaii_split.py) from the root directory make the train-val-test splits.
 <img src='images/chaii_dataset_info.png' width=512>
 
 ## Models

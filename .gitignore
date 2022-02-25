@@ -1,6 +1,7 @@
 __pycache__
 ckpts/*
-data/*
+data/chaii
+data/chaii-trans
 temp/*
 tmp_trainer/*
 wandb/*

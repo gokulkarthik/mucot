@@ -241,12 +241,14 @@ def load_dataset(args, split, mode, tokenizer):
     print(f'Loading {split} data for {mode}...')
     
     if args.dataset == 'chaii':
-        if split == 'train':
-            data_path =  'data/chaii-trans/train_translated_train.csv'
+        if split == 'train' and args.dataset_augmentation == 'translation':
+            data_path =  f'data/chaii-trans/train_translated_train_k{args.dataset_split_k}.csv'
+        elif split == 'train' and args.dataset_augmentation == 'transliteration':
+            data_path =  f'data/chaii-trans/train_transliterated_train_k{args.dataset_split_k}.csv'
         elif split == 'test':
-            data_path =  'data/chaii/train_test.csv'
+            data_path =  f'data/chaii/train_test_k{args.dataset_split_k}.csv'
         elif split == 'val':
-            data_path =  'data/chaii/train_val.csv'
+            data_path =  f'data/chaii/train_val_k{args.dataset_split_k}.csv'
 
         if mode == 'train':
             map_fn = prepare_train_features
@@ -256,6 +258,8 @@ def load_dataset(args, split, mode, tokenizer):
             langs = [lang for lang in args.langs if not lang.endswith('^')]
 
         df = pd.read_csv(data_path)
+        if 'language' not in df.columns:
+            df['language'] = df['tgt'] 
         df['language'] = df['language'].apply(reformat_lang_chaii)
 
         # fitering only essential languages; other languages are not considered for experimentatiton

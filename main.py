@@ -38,6 +38,8 @@ def get_arg_parser():
 
     # dataset parameters
     parser.add_argument('--dataset', default='chaii', choices=['chaii'])
+    parser.add_argument('--dataset_augmentation', default='translation', choices=['translation', 'transliteration'])
+    parser.add_argument('--dataset_split_k', type=int, default=0)
     parser.add_argument('--langs', choices=['hi', 'ta', 'en^', 'bn^', 'hi^', 'mr^', 'ml^', 'ta^', 'te^'], nargs='+')
     parser.add_argument('--min_langs', type=int, default=1)
     parser.add_argument('--langs_for_min_langs_filter', choices=['hi', 'ta', 'en^', 'bn^', 'hi^', 'mr^', 'ml^', 'ta^', 'te^'], nargs='+')

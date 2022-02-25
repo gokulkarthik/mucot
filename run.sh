@@ -1,4 +1,6 @@
 python main.py --dataset chaii \
+--dataset_augmentation transliteration \
+--dataset_split_k 4 \
 --langs hi ta bn^ mr^ \
 --min_langs 1 \
 --langs_for_min_langs_filter hi ta bn^ mr^ ml^ te^ \
