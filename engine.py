@@ -38,6 +38,8 @@ class CustomTrainer(Trainer):
         super(CustomTrainer, self).__init__(model, training_args, **kwargs)
         if self.temperature_for_contrastive < 0:
             self.model.logit_scale = nn.Parameter(torch.ones([], device=self.model.device) * np.log(1 / 0.07))
+            # self.model.logit_scale_qn = nn.Parameter(torch.ones([], device=self.model.device) * np.log(1 / 0.07))
+            # self.model.logit_scale_con = nn.Parameter(torch.ones([], device=self.model.device) * np.log(1 / 0.07))
 
     def training_step(self, model: nn.Module, inputs: Dict[str, Union[torch.Tensor, Any]]) -> torch.Tensor:
         """
@@ -128,6 +130,7 @@ class CustomTrainer(Trainer):
 
             # getting the outupts of pairs
             outputs_pair = model(**inputs_pair)
+            loss_pair = outputs_pair["loss"]
 
             contrastive_loss_overall = 0
             for layer_idx in self.contrastive_loss_layers:
@@ -145,6 +148,9 @@ class CustomTrainer(Trainer):
                     embed_size = embed_a.shape[2] 
                     embed_a = outputs["hidden_states"][layer_idx].view(-1, embed_size) # [bs*seq_len, embed_size]
                     embed_b = outputs_pair["hidden_states"][layer_idx].view(-1, embed_size) # [bs*seq_len, embed_size]
+                elif self.agg_for_contrastive == 'cls':
+                    embed_a = outputs["hidden_states"][layer_idx][:, 0, :] # [bs, embed_size]
+                    embed_b = outputs_pair["hidden_states"][layer_idx][:, 0, :] # [bs, embed_size]
                 else:
                     raise ValueError()
                 
@@ -172,8 +178,81 @@ class CustomTrainer(Trainer):
             wandb.log({'train/qa_loss': loss}, commit=False)
             wandb.log({'train/contrastive_loss': contrastive_loss}, commit=False)
 
+            # contrastive_loss_overall_qn = 0
+            # contrastive_loss_overall_con = 0
+            # for layer_idx in self.contrastive_loss_layers:
+
+            #     embed_a = outputs["hidden_states"][layer_idx]  # [bs, seq_len, embed_size]
+            #     filter_a_qn = torch.unsqueeze((inputs['token_type_ids']==0).long(), dim=2) # [bs, seq_len, 1]
+            #     embed_a_qn = embed_a * filter_a_qn
+            #     embed_a_con = embed_a * (1-filter_a_qn)
+
+            #     embed_b = outputs_pair["hidden_states"][layer_idx]  # [bs, seq_len, embed_size]
+            #     filter_b_qn = torch.unsqueeze((inputs_pair['token_type_ids']==0).long(), dim=2) # [bs, seq_len, 1]
+            #     embed_b_qn = embed_b * filter_b_qn
+            #     embed_b_con = embed_b * (1-filter_b_qn)
+
+            #     if self.agg_for_contrastive == 'mean':
+            #         embed_a_qn = torch.sum(embed_a_qn, dim=1) / torch.sum(filter_a_qn, dim=1)# [bs, embed_size]
+            #         embed_a_con = torch.sum(embed_a_con, dim=1) / torch.sum(1-filter_a_qn, dim=1)# [bs, embed_size]
+            #         embed_b_qn = torch.sum(embed_b_qn, dim=1) / torch.sum(filter_b_qn, dim=1)# [bs, embed_size]
+            #         embed_b_con = torch.sum(embed_b_con, dim=1) / torch.sum(1-filter_b_qn, dim=1)# [bs, embed_size]
+            #     elif self.agg_for_contrastive == 'max':
+            #         embed_a_qn, _ = torch.max(embed_a_qn, dim=1) # [bs, embed_size]
+            #         embed_a_con, _ = torch.max(embed_a_con, dim=1) # [bs, embed_size]
+            #         embed_b_qn, _ = torch.max(embed_b_qn, dim=1) # [bs, embed_size]
+            #         embed_b_con, _ = torch.max(embed_b_con, dim=1) # [bs, embed_size]
+            #     elif self.agg_for_contrastive == 'cls_sep':
+            #         pass
+            #     else:
+            #         raise ValueError()
+                
+            #     if normalize_embedding:
+            #         embed_a_qn = F.normalize(embed_a_qn, p=2, dim=1)
+            #         embed_a_con = F.normalize(embed_a_con, p=2, dim=1)
+
+            #         embed_b_qn = F.normalize(embed_b_qn, p=2, dim=1)
+            #         embed_b_con = F.normalize(embed_b_con, p=2, dim=1)
+
+            #     if self.temperature_for_contrastive < 0:
+            #         logit_scale_qn = self.model.logit_scale_qn.exp()
+            #         logits_qn = torch.mm(embed_a_qn, embed_b_qn.t()) * logit_scale_qn
+
+            #         logit_scale_con = self.model.logit_scale_con.exp()
+            #         logits_con = torch.mm(embed_a_con, embed_b_con.t()) * logit_scale_con
+            #     else:
+            #         logits_qn = torch.mm(embed_a_qn, embed_b_qn.t()) * self.temperature_for_contrastive
+
+            #         logits_con = torch.mm(embed_a_con, embed_b_con.t()) * self.temperature_for_contrastive
+
+            #     if contrastive_loss_method == 'clip':
+            #         labels = torch.arange(logits_qn.shape[0], device=logits_qn.device)
+
+            #         a_loss_qn = self.cross_entropy_loss(logits_qn, labels)
+            #         b_loss_qn = self.cross_entropy_loss(logits_qn.t(), labels)
+            #         layer_contrastive_loss_qn = (a_loss_qn + b_loss_qn) / 2
+
+            #         a_loss_con = self.cross_entropy_loss(logits_con, labels)
+            #         b_loss_con = self.cross_entropy_loss(logits_con.t(), labels)
+            #         layer_contrastive_loss_con = (a_loss_con + b_loss_con) / 2
+            #     else:
+            #         raise ValueError()
+
+            #     contrastive_loss_overall_qn += layer_contrastive_loss_qn
+            #     contrastive_loss_overall_con += layer_contrastive_loss_con
+            
+            # contrastive_loss_qn = contrastive_loss_overall_qn / len(self.contrastive_loss_layers)
+            # contrastive_loss_con = contrastive_loss_overall_con / len(self.contrastive_loss_layers)
+            # contrastive_loss = (contrastive_loss_qn + contrastive_loss_con) / 2
+            # wandb.log({'train/qa_loss': loss}, commit=False)
+            # wandb.log({'train/qa_loss_pair': loss_pair}, commit=False)
+            # wandb.log({'train/contrastive_loss_qn': contrastive_loss_qn}, commit=False)
+            # wandb.log({'train/contrastive_loss_con': contrastive_loss_con}, commit=False)
+            # wandb.log({'train/contrastive_loss': contrastive_loss}, commit=False)
+
+
             if self.state.global_step < self.max_steps_for_contrastive:
-                loss = loss + self.wt_contrastive_loss * contrastive_loss
+                loss = loss + self.wt_contrastive_loss*contrastive_loss #+ loss_pair
 
         return (loss, outputs) if return_outputs else loss
 
