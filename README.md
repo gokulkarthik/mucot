@@ -9,12 +9,12 @@ Question Answering (QA) in English has improved a lot in recent years with the a
 **Full Paper**: [Link](#) (will be updated)
 
 # Idea
-<img src='images/mucot.png' width=512>
+<img src='images/mucot.png' width=1024>
 
-<img src='images/clip.png' width=512>
+<img src='images/clip.png' width=1024>
 
 # Results
-<img src='images/result_1.png' width=512>
+<img src='images/result_1.png' width=1024>
 
 ## Datasets
 
