@@ -21,6 +21,19 @@ Question Answering (QA) in English has improved a lot in recent years with the a
 
 **Full Paper**: [Link](#) (will be updated)
 
+---
+
+# Index
+- [Idea](#idea)
+- [Results](#results)
+- [Datasets](#datasets)
+  - [Chaii](#chaii)
+- [Models](#models)
+  - [Pretrained](#pretrained)
+
+---
+<br>
+
 # Idea
 <img src='images/mucot.png' width=1024>
 
