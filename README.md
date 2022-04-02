@@ -50,12 +50,14 @@ Question Answering (QA) in English has improved a lot in recent years with the a
     * Chaii Translated & Transliterated - [Kaggle Link](https://www.kaggle.com/gokulkarthik/chaiitrans) -->
 <ul>
     <li>
-        Chaii Original <a href="Chaii Original">
+        Chaii Original -
+        <a href="https://www.kaggle.com/c/chaii-hindi-and-tamil-question-answering/data">
             <img alt="Kaggle" src="https://img.shields.io/badge/Kaggle-informational?style=flat-sqaure&logo=kaggle&logoColor=black&color=20BEFF">
         </a>
     </li>
     <li>
-        Chaii Translated & Transliterated <a href="Chaii Original">
+        Chaii Translated & Transliterated -
+            <a href="https://www.kaggle.com/gokulkarthik/chaiitrans">
             <img alt="Kaggle" src="https://img.shields.io/badge/Kaggle-informational?style=flat-sqaure&logo=kaggle&logoColor=black&color=20BEFF">
         </a>
     </li>
