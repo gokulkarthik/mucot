@@ -52,13 +52,13 @@ Question Answering (QA) in English has improved a lot in recent years with the a
     <li>
         Chaii Original -
         <a href="https://www.kaggle.com/c/chaii-hindi-and-tamil-question-answering/data">
-            <img alt="Kaggle" title="Click here to view the dataset" src="https://img.shields.io/badge/Kaggle-informational?style=flat-sqaure&logo=kaggle&logoColor=black&color=20BEFF">
+            <img alt="Kaggle" title="Click here to view the dataset" src="https://img.shields.io/badge/Kaggle%20Link-informational?style=flat-sqaure&logo=kaggle&logoColor=black&color=20BEFF">
         </a>
     </li>
     <li>
         Chaii Translated & Transliterated -
             <a href="https://www.kaggle.com/gokulkarthik/chaiitrans">
-            <img alt="Kaggle" title="Click here to view the dataset" src="https://img.shields.io/badge/Kaggle-informational?style=flat-sqaure&logo=kaggle&logoColor=black&color=20BEFF">
+            <img alt="Kaggle" title="Click here to view the dataset" src="https://img.shields.io/badge/Kaggle%20Link-informational?style=flat-sqaure&logo=kaggle&logoColor=black&color=20BEFF">
         </a>
     </li>
 </ul>
