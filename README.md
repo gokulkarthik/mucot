@@ -11,12 +11,11 @@ Accuracy of English-language Question Answering (QA) systems has improved signif
 **Bibtex**:
 ```
 @inproceedings{
-kumar2022findings,
-title={Findings of the Shared Task on Multimodal Sentiment Analysis and Troll  Meme Classification in Dravidian Languages},
+kumar2022mucot,
+title={MuCoT: Multilingual Contrastive Training for Question-Answering in Low-resource Languages},
 author={Kumar, Gokul Karthik and Gehlot, Abhishek Singh and Mullappilly, Sahal Shaji and Nandakumar, Karthik},
 booktitle={The Second Workshop on Speech and Language Technologies for Dravidian Languages-ACL 2022},
-year={2022},
-url={https://openreview.net/forum?id=HtbxitdRdG5}
+year={2022}
 }
 ```
 ---
