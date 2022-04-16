@@ -1,13 +1,19 @@
-cff-version: 1.0.0
-message: "If you use this software, please cite it as below."
+cff-version: 1.2.0
+title: >-
+  MuCoT: Multilingual Contrastive Training for
+  Question-Answering in Low-resource Languages
+message: 'If you use this software, please cite it as below.'
+type: software
 authors:
-- family-names: "Kumar"
-  given-names: "Gokul Karthik"
-- family-names: "Gehlot"
-  given-names: "Abhishek Singh"
-- family-names: "Mullappilly"
-  given-names: "Sahal Shaji"
-- family-names: "Nandakumar"
-  given-names: "Karthik"
-title: "MuCoT: Multilingual Contrastive Training for Question-Answering in Low-resource Languages"
-date-released: 2022
+  - given-names: Gokul Karthik
+    family-names: Kumar
+    email: gokul.kumar@mbzuai.ac.ae
+  - given-names: Abhishek Singh
+    family-names: Gehlot
+    email: abhishek.gehlot@mbzuai.ac.ae
+  - given-names: Sahal Shaji
+    family-names: Mullappilly
+    email: sahal.mullappilly@mbzuai.ac.ae
+  - given-names: Karthik
+    family-names: Nandakumar
+    email: karthik.nandakumar@mbzuai.ac.ae
