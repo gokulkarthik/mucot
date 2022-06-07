@@ -6,7 +6,11 @@ Accuracy of English-language Question Answering (QA) systems has improved signif
 
 **TL;DR:** We use contrastive loss between the translated pairs during fine-tuning to improve multilingual BERT for question answering in low-resource languages.
 
-**[[ArXiv Preprint](https://arxiv.org/abs/2204.05814)] [[ACL 2022 Anthology](https://aclanthology.org/2022.dravidianlangtech-1.3/)] [[ACL 2022 Slides](https://github.com/gokulkarthik/mucot/blob/main/images/mucot-acl.pdf)] [[ACL 2022 Video](https://youtu.be/IHchdD6bq6U)]**
+<div align="center">
+    <b><a href="https://arxiv.org/abs/2204.05814">ArXiv Preprint</a></b> |  <b><a href="https://aclanthology.org/2022.dravidianlangtech-1.3/">ACL 2022 Anthology</a></b> | <b><a href="https://github.com/gokulkarthik/mucot/blob/main/images/mucot-acl.pdf">ACL 2022 Slides</a></b> | <b><a href="https://youtu.be/IHchdD6bq6U">ACL 2022 Video</a></b>
+    <br>
+    <br>
+</div>
 
 **Bibtex**:
 ```
@@ -60,9 +64,3 @@ year={2022}
 
 > Run [`data/chaii_split.py`](./data/chaii_split.py) from the root directory make the train-val-test splits.
 <img src='images/chaii_dataset_info.png' width=512>
-
-## Models
-
-### Pretrained:
-- [mBERT](https://huggingface.co/bert-base-multilingual-cased) | [mBERT SQUAD](https://huggingface.co/salti/bert-base-multilingual-cased-finetuned-squad)
-
