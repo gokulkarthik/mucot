@@ -1,6 +1,6 @@
 # MuCoT: Multilingual Contrastive Training for Question-Answering in Low-resource Languages
 
-> [MBZUAI](https://mbzuai.ac.ae/) - ML701 Course Project (Machine Learning)
+> [MBZUAI](https://mbzuai.ac.ae/) - ML701 Course Project (Machine Learning by Dr. Salman Khan)
 
 > 🎉 Accepted for oral presentation at [ACL 2022](https://www.2022.aclweb.org/) [Workshop on Speech and Language Technologies for Dravidian Languages](https://dravidianlangtech.github.io/2022/)
 
