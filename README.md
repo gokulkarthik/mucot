@@ -8,7 +8,7 @@ Accuracy of English-language Question Answering (QA) systems has improved signif
 
 **TL;DR:** We use contrastive loss between the translated pairs during fine-tuning to improve multilingual BERT for question answering in low-resource languages.
 
-**[[PDF](images/mucot-acl.pdf)] [[ArXiv Preprint](https://arxiv.org/abs/2204.05814)] [[ACL Anthology](https://aclanthology.org/2022.dravidianlangtech-1.3/)] [[ACL 2022 Slides](https://github.com/gokulkarthik/mucot/blob/main/images/mucot-acl.pdf)] [[ACL 2022 Video](https://youtu.be/IHchdD6bq6U)]**
+**[[ArXiv Preprint](https://arxiv.org/abs/2204.05814)] [[ACL Slides](https://github.com/gokulkarthik/mucot/blob/main/images/mucot-acl.pdf)] [[ACL Video](https://youtu.be/IHchdD6bq6U)] [[ACL Anthology](https://aclanthology.org/2022.dravidianlangtech-1.3/)]**
 
 **Bibtex**:
 ```
